@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso — NurseGuard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --text-main: #111827;
+            --text-muted: #4B5563;
+            --bg: #FFFFFF;
+            --surface: #F3F4F6;
+            --accent-danger: #EF4444;
+            --official-dark: #080D10;
+            --official-teal: #2DD4BF;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* LOGOTIPO OFICIAL */
+        .logo-icon {
+            width: 54px;
+            height: 54px;
+            background-color: var(--official-dark);
+            border-radius: 14px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .logo-icon::before,
+        .logo-icon::after {
+            content: '';
+            position: absolute;
+            background-color: var(--official-teal);
+            border-radius: 2px;
+        }
+
+        .logo-icon::before { width: 32px; height: 10px; }
+        .logo-icon::after { width: 10px; height: 32px; }
+
+        .logo-center-square {
+            width: 8px;
+            height: 8px;
+            background-color: var(--official-dark);
+            z-index: 10;
+            border-radius: 1px;
+        }
+
+        h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 10px; }
+        h2 { font-size: 1.5rem; font-weight: 700; margin-top: 40px; color: var(--primary); border-bottom: 2px solid var(--surface); padding-bottom: 10px; }
+        
+        p, li { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 15px; }
+        
+        .alert-box {
+            background-color: #FFFBEB;
+            padding: 24px;
+            border-radius: 20px;
+            margin: 30px 0;
+        }
+
+        .alert-box h3 { margin: 0 0 10px 0; color: #92400E; font-size: 1.1rem; }
+
+        .critical-notice {
+            background-color: #FEF2F2;
+            padding: 24px;
+            border-radius: 20px;
+            margin: 30px 0;
+        }
+
+        .critical-notice h3 { margin: 0 0 10px 0; color: #991B1B; font-size: 1.1rem; }
+
+        footer { text-align: center; margin-top: 60px; padding-bottom: 40px; color: var(--text-muted); font-size: 0.9rem; }
+
+        @media (max-width: 600px) {
+            .container { margin: 20px; padding: 20px; border-radius: 20px; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-icon">
+                <div class="logo-center-square"></div>
+            </div>
+            <h1>Termos de Uso</h1>
+            <p>Última atualização: 4 de Junho de 2026</p>
+        </header>
+
+        <section>
+            <p>Bem-vindo ao <strong>NurseGuard</strong>. Ao utilizar nosso aplicativo, você concorda com os termos descritos abaixo. Leia-os atentamente.</p>
+
+            <h2>1. Natureza do Serviço</h2>
+            <p>O NurseGuard é uma ferramenta projetada para auxiliar na <strong>adesão terapêutica</strong>. O aplicativo não substitui integralmente a supervisão de um profissional ou a responsabilidade do usuário.</p>
+            
+            <div class="critical-notice">
+                <h3>⚠️ AVISO IMPORTANTE DE SAÚDE</h3>
+                <p>O NurseGuard <strong>NÃO substitui</strong> um médico. O usuário deve <strong>seguir estritamente a prescrição médica</strong> conforme os horários estabelecidos pelo seu médico assistente.</p>
+                <p>O desenvolvedor <strong>não se responsabiliza por automedicação</strong> realizada sem a devida supervisão e orientação de um profissional de saúde.</p>
+            </div>
+
+            <h2>2. Responsabilidades do Usuário</h2>
+            <ul>
+                <li>Você é responsável por inserir corretamente os nomes, dosagens e horários conforme a orientação médica.</li>
+                <li>A decisão final de ingerir qualquer medicamento é sempre do usuário ou de seu responsável legal.</li>
+                <li>O app é uma ferramenta de apoio; a responsabilidade pelo cumprimento do tratamento é do usuário.</li>
+            </ul>
+
+            <h2>3. Interferências do Sistema Operacional</h2>
+            <div class="alert-box">
+                <h3>⚙️ CONFIGURAÇÕES DO CELULAR</h3>
+                <p>O funcionamento dos alarmes pode sofrer interferências das configurações do seu dispositivo. O NurseGuard pode falhar ou atrasar notificações devido ao:</p>
+                <ul>
+                    <li><strong>Modo Silencioso</strong> ou <strong>Não Perturbe</strong>.</li>
+                    <li>Funções de <strong>Economia de Bateria</strong> ou <strong>Otimização de Energia</strong>.</li>
+                    <li>Permissões de sistema revogadas pelo usuário.</li>
+                </ul>
+            </div>
+
+            <h2>4. Privacidade e Dados</h2>
+            <p>Em conformidade com a LGPD, o NurseGuard opera de forma <strong>100% offline</strong>. Seus dados de saúde são armazenados exclusivamente na memória do seu dispositivo e nunca são enviados para servidores externos.</p>
+
+            <h2>5. Limitação de Responsabilidade</h2>
+            <p>O desenvolvedor do aplicativo não se responsabiliza por:</p>
+            <ul>
+                <li>Doses esquecidas devido a falhas técnicas, bateria descarregada ou aparelhos desligados.</li>
+                <li>Consequências advindas de <strong>automedicação</strong> ou erro de cadastro pelo usuário.</li>
+                <li>Reações adversas a medicamentos ou decisões baseadas exclusivamente no uso do app.</li>
+            </ul>
+
+            <h2>6. Alterações nos Termos</h2>
+            <p>Reservamo-nos o direito de atualizar estes termos. O uso continuado do aplicativo após alterações constitui aceitação dos novos termos.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Teraverso — Todos os direitos reservados.<br>
+            Cuidar de quem você ama deve ser simples e responsável.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
