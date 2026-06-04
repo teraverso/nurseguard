@@ -1,204 +1,162 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade — NurseGuard</title>
-    <!-- Importação da Fonte Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #4F46E5;
-            --text-main: #111827;
-            --text-muted: #4B5563;
-            --bg: #FFFFFF;
-            --surface: #F3F4F6;
-            --official-dark: #080D10;
-            --official-teal: #2DD4BF;
-            --radius: 32px;
-        }
+    <title>NurseGuard — Sua saúde com um toque lúdico</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- SEO Tradicional -->
+<title>NurseGuard | Gerenciador de Medicamentos Lúdico e Acessível</title>
+<meta name="description" content="O NurseGuard é um app de alarme de remédios 100% offline e seguro. Design lúdico criado especialmente para idosos, TDAH e TEA. Privacidade total para sua saúde.">
+<meta name="keywords" content="alarme de remédio, gerenciador de medicamentos, saúde idosos, app TDAH, acessibilidade TEA, lembrete de medicação, privacidade saúde, app offline">
+<meta name="author" content="Teraverso">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.nurseguard.com.br/"> <!-- Altere para seu domínio real -->
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 20px;
-        }
+<!-- Open Graph / Facebook (Como o site aparece ao compartilhar) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.nurseguard.com.br/">
+<meta property="og:title" content="NurseGuard | Sua saúde com um toque lúdico">
+<meta property="og:description" content="Nunca mais esqueça um remédio. App focado em acessibilidade para idosos e neurodivergentes. 100% local e seguro.">
+<meta property="og:image" content="https://www.nurseguard.com.br/assets/og-image.png"> <!-- Crie uma imagem de 1200x630px para isso -->
 
-        .container {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 50px;
-            background: white;
-            border-radius: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
-        }
+<!-- Twitter / X -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.nurseguard.com.br/">
+<meta property="twitter:title" content="NurseGuard | Lembrete de Medicamentos">
+<meta property="twitter:description" content="O gerenciador de saúde mais simples e lúdico do mercado. Feito para quem precisa de clareza e segurança.">
+<meta property="twitter:image" content="https://www.nurseguard.com.br/assets/og-image.png">
 
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+<!-- Favicon (O ícone que aparece na aba do navegador) -->
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="theme-color" content="#4F46E5"> <!-- Cor da barra de endereço no Android -->
 
-        /* LOGOTIPO OFICIAL VIA CSS */
-        .logo-icon {
-            width: 54px;
-            height: 54px;
-            background-color: var(--official-dark);
-            border-radius: 14px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
-        }
-
-        .logo-icon::before,
-        .logo-icon::after {
-            content: '';
-            position: absolute;
-            background-color: var(--official-teal);
-            border-radius: 2px;
-        }
-
-        .logo-icon::before { width: 32px; height: 10px; }
-        .logo-icon::after { width: 10px; height: 32px; }
-
-        .logo-center-square {
-            width: 8px;
-            height: 8px;
-            background-color: var(--official-dark);
-            z-index: 10;
-            border-radius: 1px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 10px;
-            color: var(--text-main);
-            line-height: 1.2;
-        }
-
-        .date {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 30px;
-            display: block;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 45px;
-            color: var(--primary);
-            border-bottom: 2px solid var(--surface);
-            padding-bottom: 12px;
-            margin-bottom: 20px;
-        }
-
-        p, li {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            margin-bottom: 15px;
-        }
-
-        ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        li {
-            margin-bottom: 12px;
-        }
-
-        a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* CAIXA DE CONTATO LÚDICA */
-        .contact-box {
-            background-color: var(--surface);
-            padding: 24px;
-            margin-top: 30px;
-            border-radius: 20px;
-            text-align: center;
-        }
-
-        .contact-box strong {
-            display: block;
-            margin-bottom: 5px;
-            color: var(--text-main);
-        }
-
-        @media (max-width: 600px) {
-            .container { padding: 30px 20px; border-radius: 24px; }
-            h1 { font-size: 1.7rem; }
-        }
-    </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <!-- Logo Oficial NurseGuard -->
-        <div class="logo-icon">
-            <div class="logo-center-square"></div>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+           
+                <div class="logo">
+                   <div class="logo-icon">
+                       <div class="logo-center-square"></div> <!-- Nova div para o detalhe central -->
+                    </div>
+                   <span>NurseGuard</span>
+              </div>
+                <nav class="nav-links">
+                <a href="#features">Recursos</a>
+                <a href="#security">Segurança</a>
+                <a href="https://play.google.com/store/apps/details?id=com.teraverso.nurseguard&pcampaignid=web_share" target="_blank" class="btn-primary">Baixar Agora</a>
+                </nav>
         </div>
-        <h1>Política de Privacidade</h1>
-        <span class="date">Última atualização: 22 de maio de 2026</span>
+        
     </header>
 
-    <p>Esta Política de Privacidade governa o uso do aplicativo <strong>NurseGuard</strong>, desenvolvido para dispositivos móveis. O aplicativo foi projetado com foco total na privacidade, servindo exclusivamente como um sistema local de alerta para administração de medicamentos.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="badge">Disponível para Android</span>
+                    <h1>Nunca mais esqueça um <span>remédio</span></h1>
+                    <p>Um gerenciador de medicamentos lúdico, simples e focado em acessibilidade. Criado para idosos, TDAH e TEA</p>
+                    <div class="hero-btns">
+                        <a href="https://play.google.com/store/apps/details?id=com.teraverso.nurseguard&pcampaignid=web_share" target="_blank" class="btn-store">
+                            <i data-lucide="play"></i>
+                            Google Play
+                        </a>
+                        <a href="#features" class="btn-secondary">Conheça o App</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="app-mockup">
+                        <!-- Representação visual do alarme lúdico -->
+                        <div class="mockup-content">
+                            <div class="mockup-photo"></div>
+                            <div class="mockup-label">Dipirona</div>
+                            <div class="mockup-btn">Tomei</div>
+                        </div>
+                    </div>
+                    <div class="blob"></div>
+                </div>
+            </div>
+        </section>
 
-    <h2>1. Coleta e Uso de Informações Pessoais</h2>
-    <p>O NurseGuard adota uma postura de minimização de dados:</p>
-    <ul>
-        <li>Não coleta, não armazena e não transmite qualquer tipo de informação de identificação pessoal, tais como nome, e-mail, telefone ou arquivos do dispositivo.</li>
-        <li>Toda a lógica de funcionamento e armazenamento de dados ocorre de forma estritamente local e criptografada no seu dispositivo.</li>
-    </ul>
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Simples de verdade</h2>
+                    <p>Desenhamos cada detalhe para que o cuidado com a saúde não seja uma tarefa pesada</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i data-lucide="camera"></i>
+                        <h3>Fotos das Caixas</h3>
+                        <p>Identifique o remédio pela foto da embalagem. Mais segurança para idosos e crianças</p>
+                    </div>
+                    <div class="feature-card">
+                        <i data-lucide="bell-ring"></i>
+                        <h3>Alarmes Lúdicos</h3>
+                        <p>Interface com cores sólidas e botões gigantes. Impossível de ignorar ou errar</p>
+                    </div>
+                    <div class="feature-card">
+                        <i data-lucide="shield-check"></i>
+                        <h3>100% Offline</h3>
+                        <p>Seus dados de saúde ficam apenas no seu celular. Sem nuvem, sem riscos, total privacidade</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2>2. Funcionamento Off-line</h2>
-    <ul>
-        <li>O aplicativo funciona de forma totalmente off-line.</li>
-        <li>Não solicitamos acesso a recursos sensíveis como GPS, microfone ou contatos. As permissões solicitadas visam estritamente o disparo de notificações e alarmes precisos.</li>
-    </ul>
+        <!-- Security Highlight -->
+        <section id="security" class="security">
+            <div class="container security-box">
+                <div class="security-content">
+                    <h2>Privacidade é um direito, não um opcional</h2>
+                    <p>O NurseGuard utiliza criptografia AES-256 e armazena tudo localmente. Estamos em conformidade com a LGPD para garantir que seus dados sensíveis nunca saiam da sua mão</p>
+                    <ul class="security-list">
+                        <li><i data-lucide="check"></i> Sem rastreadores</li>
+                        <li><i data-lucide="check"></i> Sem anúncios</li>
+                        <li><i data-lucide="check"></i> Criptografia de Hardware</li>
+                    </ul>
+                </div>
+                <div class="security-icon-large">
+                    <i data-lucide="lock"></i>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <h2>3. Serviços de Terceiros e Anúncios</h2>
-    <p>Para fins de sustentabilidade, o aplicativo poderá integrar o serviço Google AdMob.</p>
-    <ul>
-        <li>O AdMob pode utilizar identificadores anônimos do dispositivo para exibir anúncios relevantes.</li>
-        <li>Nenhum dado pessoal é compartilhado com esta plataforma, visto que o aplicativo não os coleta.</li>
-        <li>Consulte a política do provedor aqui: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google AdMob Privacy Policy</a>.</li>
-    </ul>
+    <!-- Footer -->
+    <footer id="download">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="logo">
+                        <div class="logo-icon white"></div>
+                        <span>NurseGuard</span>
+                    </div>
+                    <p>Sua saúde sob controle com um toque lúdico</p>
+                </div>
+                <div class="footer-links">
+                    <a href="http://nurseguard.com.br/privacidade/" target="_blank">Privacidade</a>
+                    <a href="https://nurseguard.com.br/termosdeuso/" target="_blank">Termos de Uso</a>
+                    <a href="#">Contato</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teraverso. NurseGuard é 100% local e seguro</p>
+            </div>
+        </div>
+    </footer>
 
-    <h2>4. Segurança dos Dados</h2>
-    <p>Como não realizamos upload para nuvem, seus dados estão protegidos contra interceptação de rede. O armazenamento local é protegido pelo sistema de chaves do próprio Android (Keystore).</p>
-
-    <h2>5. Alterações nesta Política</h2>
-    <p>Esta página poderá ser atualizada periodicamente. Recomendamos a revisão eventual para verificar modificações, que entram em vigor imediatamente após a publicação.</p>
-
-    <h2>6. Contato e Suporte</h2>
-    <p>Se você tiver qualquer dúvida ou sugestão sobre nossas práticas de privacidade, entre em contato:</p>
-    
-    <div class="contact-box">
-        <strong>Teraverso Tecnologia</strong>
-        <a href="mailto:edson@teraverso.com">edson@teraverso.com</a>
-    </div>
-</div>
-
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
