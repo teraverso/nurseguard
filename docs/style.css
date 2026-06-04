@@ -1,0 +1,411 @@
+/* DESIGN SYSTEM NURSEGUARD */
+:root {
+    --primary: #4F46E5;
+    --primary-dark: #3730A3;
+    --accent: #10B981;
+    --bg: #FFFFFF;
+    --surface: #F3F4F6;
+    --text-main: #111827;
+    --text-muted: #4B5563;
+    --radius-lg: 32px;
+    --radius-md: 16px;
+    --shadow: 0 10px 30px rgba(79, 70, 229, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--surface);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+/* CONTAINER DO ÍCONE (O QUADRADO ESCURO) */
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #080D10; /* Fundo oficial escuro */
+    border-radius: 10px;       /* Cantos arredondados lúdicos */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* A CRUZ (PARTE HORIZONTAL E VERTICAL EM TEAL) */
+.logo-icon::before,
+.logo-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #2DD4BF; /* Verde azulado oficial */
+    border-radius: 2px;
+}
+
+/* Braço Horizontal */
+.logo-icon::before {
+    width: 24px;
+    height: 8px;
+}
+
+/* Braço Vertical */
+.logo-icon::after {
+    width: 8px;
+    height: 24px;
+}
+
+/* O DETALHE ESCURO NO CENTRO DA CRUZ */
+.logo-center-square {
+    width: 6px;
+    height: 6px;
+    background-color: #080D10; /* Cor igual ao fundo */
+    z-index: 10;               /* Garante que fique por cima da cruz */
+    border-radius: 1px;
+}
+
+/* AJUSTE NA LOGO PARA ALINHAR O TEXTO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #111827;
+}
+
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: var(--primary);
+    color: white !important;
+    padding: 12px 24px;
+    border-radius: var(--radius-md);
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-store {
+    background: var(--text-main);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-secondary {
+    padding: 16px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 700;
+    background: var(--surface);
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 100px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.badge {
+    background: var(--surface);
+    color: var(--primary);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.hero-text h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 20px 0 30px;
+    letter-spacing: -2px;
+}
+
+.hero-text h1 span {
+    color: var(--primary);
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 16px;
+}
+
+/* APP MOCKUP */
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.app-mockup {
+    width: 320px;
+    height: 580px;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 0 50px 100px rgba(0,0,0,0.1);
+    border: 12px solid #111;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.mockup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.mockup-photo {
+    width: 200px;
+    height: 200px;
+    background: var(--surface);
+    border-radius: 32px;
+    margin-bottom: 24px;
+}
+
+.mockup-label {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.mockup-btn {
+    width: 100%;
+    height: 60px;
+    background: var(--accent);
+    border-radius: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: var(--primary);
+    filter: blur(80px);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* FEATURES */
+.features {
+    padding: 100px 0;
+    background: var(--surface);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.feature-card {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    width: 60px;
+    height: 60px;
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+/* SECURITY SECTION */
+.security {
+    padding: 100px 0;
+}
+
+.security-box {
+    background: var(--primary);
+    border-radius: var(--radius-lg);
+    padding: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.security-content h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.security-list {
+    list-style: none;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.security-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.security-icon-large i {
+    width: 200px;
+    height: 200px;
+    opacity: 0.2;
+}
+
+/* FOOTER */
+footer {
+    padding: 80px 0 40px;
+    background: #080D10;
+    color: white;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links a {
+    color: #9CA3AF;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1F2937;
+    padding-top: 40px;
+    text-align: center;
+    color: #4B5563;
+}
+
+/* RESPONSIVITY */
+@media (max-width: 992px) {
+    .hero-grid { grid-template-columns: 1fr; text-align: center; }
+    .hero-text h1 { font-size: 3rem; }
+    .hero-btns, .hero-text p { justify-content: center; margin-left: auto; margin-right: auto; }
+    .feature-grid { grid-template-columns: 1fr; }
+    .security-box { flex-direction: column; padding: 40px; text-align: center; }
+}
