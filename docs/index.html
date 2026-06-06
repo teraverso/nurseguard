@@ -1,38 +1,242 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
 <head>
+    <!-- =====================================================
+         DOCUMENTO
+         ===================================================== -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- SEO Tradicional -->
-    <title>NurseGuard | Gerenciador de Medicamentos Lúdico e Acessível</title>
-    <meta name="description" content="O NurseGuard é um app de alarme de remédios 100% offline e seguro. Design lúdico criado especialmente para idosos, TDAH e TEA. Privacidade total para sua saúde.">
-    <meta name="keywords" content="alarme de remédio, gerenciador de medicamentos, saúde idosos, app TDAH, acessibilidade TEA, lembrete de medicação, privacidade saúde, app offline">
+    <!-- =====================================================
+         SEO ESSENCIAL
+         ===================================================== -->
+    <title>NurseGuard | App de Lembrete de Remédios Gratuito — Offline e Seguro</title>
+
+    <meta name="description" content="NurseGuard é o app gratuito de lembrete de remédios para Android. Alarmes lúdicos com foto da embalagem, 100% offline, criptografia AES-256 e conformidade com a LGPD. Ideal para idosos, TDAH e TEA.">
+
+    <meta name="keywords" content="lembrete de remédio, alarme de medicamento, app medicação android, gerenciador de remédios, saúde idosos app, app TDAH medicação, TEA lembrete, app offline saúde, privacidade saúde, LGPD saúde, dipirona alarme, controle de medicação gratuito, Teraverso, NurseGuard">
+
     <meta name="author" content="Teraverso">
-    <meta name="robots" content="index, follow">
+    <meta name="publisher" content="Teraverso">
+    <meta name="copyright" content="Teraverso 2026">
+
+    <!-- Indexação agressiva -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow">
+
+    <!-- URL canônica -->
     <link rel="canonical" href="https://www.nurseguard.com.br/">
 
-    <!-- Open Graph -->
+    <!-- Idioma e região -->
+    <meta name="language" content="Portuguese">
+    <meta name="geo.region" content="BR">
+    <meta name="geo.country" content="Brazil">
+    <link rel="alternate" hreflang="pt-BR" href="https://www.nurseguard.com.br/">
+    <link rel="alternate" hreflang="x-default" href="https://www.nurseguard.com.br/">
+
+    <!-- =====================================================
+         OPEN GRAPH
+         ===================================================== -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NurseGuard">
+    <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="https://www.nurseguard.com.br/">
-    <meta property="og:title" content="NurseGuard | Sua saúde com um toque lúdico">
-    <meta property="og:description" content="Nunca mais esqueça um remédio. App focado em acessibilidade para idosos e neurodivergentes. 100% local e seguro.">
+    <meta property="og:title" content="NurseGuard — App Gratuito de Lembrete de Remédios para Android">
+    <meta property="og:description" content="Nunca mais esqueça um remédio. Alarmes lúdicos com foto da embalagem, 100% offline e com criptografia AES-256. Feito para idosos, TDAH e TEA.">
     <meta property="og:image" content="https://www.nurseguard.com.br/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="NurseGuard — App de lembrete de remédios lúdico e acessível">
 
-    <!-- Twitter / X -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.nurseguard.com.br/">
-    <meta property="twitter:title" content="NurseGuard | Lembrete de Medicamentos">
-    <meta property="twitter:description" content="O gerenciador de saúde mais simples e lúdico do mercado. Feito para quem precisa de clareza e segurança.">
-    <meta property="twitter:image" content="https://www.nurseguard.com.br/assets/og-image.png">
+    <!-- =====================================================
+         TWITTER / X
+         ===================================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nurseguard">
+    <meta name="twitter:creator" content="@teraverso">
+    <meta name="twitter:url" content="https://www.nurseguard.com.br/">
+    <meta name="twitter:title" content="NurseGuard — Lembrete de Remédios Gratuito e Offline">
+    <meta name="twitter:description" content="O app de medicação mais simples e lúdico do mercado. Privacidade total, sem anúncios, feito para quem precisa de clareza.">
+    <meta name="twitter:image" content="https://www.nurseguard.com.br/assets/og-image.png">
+    <meta name="twitter:image:alt" content="Tela do app NurseGuard com alarme de remédio">
 
-    <!-- Favicon -->
+    <!-- =====================================================
+         PWA & MOBILE
+         ===================================================== -->
+    <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#3730A3" media="(prefers-color-scheme: dark)">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="NurseGuard">
+    <meta name="application-name" content="NurseGuard">
+    <meta name="msapplication-TileColor" content="#4F46E5">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="icon" type="image/png" href="favicon.png">
-    <meta name="theme-color" content="#4F46E5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 
+    <!-- =====================================================
+         PERFORMANCE
+         ===================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://play.google.com">
+
+    <!-- =====================================================
+         STRUCTURED DATA — JSON-LD (Schema.org v30.0)
+         ===================================================== -->
+
+    <!-- 1. ORGANIZATION — identidade da marca, E-E-A-T, Knowledge Graph -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://www.nurseguard.com.br/#organization",
+      "name": "Teraverso",
+      "alternateName": "NurseGuard",
+      "url": "https://www.nurseguard.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.nurseguard.com.br/assets/logo.png",
+        "width": 400,
+        "height": 400
+      },
+      "description": "Teraverso é desenvolvedor e criador do NurseGuard, o app gratuito de lembrete de medicamentos com foco em acessibilidade para idosos, TDAH e TEA.",
+      "foundingDate": "2024",
+      "knowsAbout": ["saúde digital", "acessibilidade", "LGPD", "medicamentos", "TDAH", "TEA", "idosos"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "contato@nurseguard.com.br",
+        "availableLanguage": "Portuguese",
+        "areaServed": "BR"
+      },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.teraverso.nurseguard",
+        "https://www.instagram.com/nurseguard",
+        "https://www.tiktok.com/@nurseguard.app"
+      ]
+    }
+    </script>
+
+    <!-- 2. WEBSITE — hierarquia do site, base para sitelinks automáticos -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://www.nurseguard.com.br/#website",
+      "name": "NurseGuard",
+      "alternateName": "NurseGuard — Lembrete de Remédios",
+      "url": "https://www.nurseguard.com.br/",
+      "description": "Site oficial do NurseGuard, app gratuito de lembrete de medicamentos para Android.",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://www.nurseguard.com.br/#organization"
+      }
+    }
+    </script>
+
+    <!-- 3. MOBILE APPLICATION — rich result com avaliação, categoria e link direto na Play Store -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "@id": "https://www.nurseguard.com.br/#app",
+      "name": "NurseGuard",
+      "alternateName": "NurseGuard — Lembrete de Remédios",
+      "description": "App gratuito de lembrete de medicamentos com alarmes lúdicos, foto da embalagem, 100% offline, criptografia AES-256 e conformidade com a LGPD. Ideal para idosos, TDAH e TEA.",
+      "url": "https://www.nurseguard.com.br/",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.teraverso.nurseguard",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.teraverso.nurseguard",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "Medication Reminder",
+      "operatingSystem": "Android 8.0+",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "120",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "screenshot": "https://www.nurseguard.com.br/assets/screenshot.png",
+      "featureList": [
+        "Alarmes com foto da embalagem do remédio",
+        "Interface lúdica com botões grandes",
+        "100% offline — sem internet necessária",
+        "Criptografia AES-256 local",
+        "Conformidade com a LGPD",
+        "Sem anúncios e sem rastreadores",
+        "Acessível para idosos, TDAH e TEA"
+      ],
+      "inLanguage": "pt-BR",
+      "author": {
+        "@id": "https://www.nurseguard.com.br/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.nurseguard.com.br/#organization"
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2026-06-01"
+    }
+    </script>
+
+    <!-- 4. BREADCRUMBLIST — substitui URL crua pelos menus legíveis no SERP -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "NurseGuard",
+          "item": "https://www.nurseguard.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Recursos",
+          "item": "https://www.nurseguard.com.br/#features"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Segurança",
+          "item": "https://www.nurseguard.com.br/#security"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Privacidade",
+          "item": "https://nurseguard.com.br/privacidade/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Termos de Uso",
+          "item": "https://nurseguard.com.br/termosdeuso/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- =====================================================
+         RECURSOS EXTERNOS
+         ===================================================== -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
 </head>
 <body>
 
