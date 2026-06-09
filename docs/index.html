@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
+<html lang="pt-BR">
 <head>
-    <!-- =====================================================
+        <!-- =====================================================
          DOCUMENTO
          ===================================================== -->
     <meta charset="UTF-8">
@@ -240,226 +240,137 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header class="navbar" id="navbar">
-        <div class="container navbar-inner">
-            <a href="/" class="logo" aria-label="NurseGuard — página inicial">
+    <div class="top-progress-bar" id="progressBar"></div>
+
+    <nav class="cler-nav" id="mainNavbar">
+        <div class="nav-wrapper">
+            <a href="#" class="logo" aria-label="NurseGuard Home">
                 <div class="logo-icon" aria-hidden="true">
                     <div class="logo-center-square"></div>
                 </div>
-                <span>NurseGuard</span>
+                <span>Nurse<span class="highlight-text">Guard</span></span>
             </a>
-            <nav class="nav-links" aria-label="Navegação principal">
-                <a href="#features">Recursos</a>
-                <a href="#security">Segurança</a>
-                <a href="https://play.google.com/store/apps/details?id=com.teraverso.nurseguard&pcampaignid=web_share"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="btn-primary">
-                    Baixar Agora
-                </a>
-            </nav>
+            
+            <div class="nav-menu">
+             
+                <a href="https://play.google.com/store/apps/details?id=com.teraverso.nurseguard&hl=pt_BR" target="_blank" class="btn-premium-nav">Obter App</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container hero-grid">
-                <div class="hero-text">
-                    <h1>Nunca mais esqueça um <span class="highlight">remédio</span></h1>
-                    <p>Um gerenciador de medicamentos, simples e focado em acessibilidade. Criado para idosos, TDAH e TEA</p>
-                    <div class="hero-btns">
-                        <a href="https://play.google.com/store/apps/details?id=com.teraverso.nurseguard&pcampaignid=web_share"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn-store">
-                            <i data-lucide="play" aria-hidden="true"></i>
-                            Google Play
+        
+        <section class="section-hero">
+            <div class="canvas-container hero-grid">
+                
+                <div class="hero-block-left">
+                    <h1 class="giant-display-title">
+                        NUNCA MAIS<br>ESQUEÇA<br>UM REMÉDIO
+                    </h1>
+                    
+                    <p class="editorial-lead">
+                        Aplicativo de lembrete de medicamentos, simples e focado em acessibilidade para idosos, TDAH e TEA
+                    </p>
+                    
+                    <div class="editorial-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.teraverso.nurseguard&hl=pt_BR" target="_blank" class="btn-cler-dark">
+                            <span>Google Play</span>
                         </a>
-                        <a href="#features" class="btn-secondary">
-                            Conheça o App
-                            <i data-lucide="arrow-down" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="hero-trust">
-                        <div class="trust-item">
-                            <i data-lucide="shield-check" aria-hidden="true"></i>
-                            <span>100% Offline</span>
-                        </div>
-                        <div class="trust-divider"></div>
-                        <div class="trust-item">
-                            <i data-lucide="lock" aria-hidden="true"></i>
-                            <span>LGPD</span>
-                        </div>
-                        <div class="trust-divider"></div>
-                        <div class="trust-item">
-                            <i data-lucide="smile" aria-hidden="true"></i>
-                            <span>Acessível</span>
-                        </div>
+                        <a href="#pilar-1" class="btn-cler-subtle">Especificações</a>
                     </div>
                 </div>
 
-                <div class="hero-visual" aria-hidden="true">
-                    <div class="app-mockup">
-                        <div class="mockup-notch"></div>
-                        <div class="mockup-content">
-                            <div class="mockup-header">
-                                <span class="mockup-time">09:30</span>
-                                <span class="mockup-alarm-label">Hora do Remédio</span>
-                            </div>
-                            <div class="mockup-photo">
-                                <img src="dipirona.png" alt="Caixa de remédio sobre a mesa" class="mockup-photo-img">
-                            </div>
-                            <div class="mockup-med-name">Dipirona</div>
-                            <div class="mockup-med-dose">500mg · 1 comprimido</div>
-                            <button class="mockup-btn">
-                                <i data-lucide="check"></i>
-                                Tomei!
-                            </button>
-                            <button class="mockup-btn-skip">Lembrar depois</button>
-                        </div>
+                <div class="hero-block-right">
+                    <div class="hero-image-wrapper">
+                        <img src="familiaNurseGuard.png" alt="Idoso feliz e sorrindo com sua família" class="hero-family-img">
                     </div>
-                    <div class="blob"></div>
-                    <div class="blob blob-secondary"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-spec-premium" id="pilar-1">
+            <div class="canvas-container spec-premium-grid">
+                <div class="spec-sticky-block">
+                    <span class="spec-index">EXTREMAMENTE VISUAL</span>
+                    <h2>Mapeamento Fotográfico Sólido.</h2>
+                </div>
+                <div class="spec-body-text">
+                    <p>
+                        Pessoas idosas ou no espectro autista identificam formas e cores estruturais antes de decodificar textos texturizados. O NurseGuard salva a foto real do remédio diretamente no celular e a exibe no alarme para eliminar qualquer risco de confundir as embalagens.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section id="features" class="features">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Simples de verdade</h2>
-                    <p>Desenhamos cada detalhe para que o cuidado com a saúde não seja uma tarefa pesada</p>
+        <section class="section-spec-premium light-bg" id="pilar-2">
+            <div class="canvas-container spec-premium-grid">
+                <div class="spec-sticky-block">
+                    <span class="spec-index">EQUILÍBRIO COGNITIVO</span>
+                    <h2>Cromatismo Estável e Sem Ruídos.</h2>
                 </div>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon-wrap feature-icon-green">
-                            <i data-lucide="camera" aria-hidden="true"></i>
-                        </div>
-                        <h3>Fotos das Caixas</h3>
-                        <p>Identifique o remédio pela foto da embalagem. Mais segurança para idosos e crianças</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon-wrap feature-icon-teal">
-                            <i data-lucide="bell-ring" aria-hidden="true"></i>
-                        </div>
-                        <h3>Alarmes Lúdicos</h3>
-                        <p>Interface com cores sólidas e botões gigantes. Impossível de ignorar ou errar</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon-wrap feature-icon-green">
-                            <i data-lucide="shield-check" aria-hidden="true"></i>
-                        </div>
-                        <h3>100% Offline</h3>
-                        <p>Seus dados de saúde ficam apenas no seu celular. Sem nuvem, sem riscos, total privacidade</p>
-                    </div>
+                <div class="spec-body-text">
+                    <p>
+                        Interfaces modernas abusam de degradês, animações estroboscópicas e microinterações agressivas que geram gatilhos de ansiedade. Nossa engenharia adota paletas puras e contraste balanceado (WCAG AAA), permitindo que mentes com TDAH mantenham o foco no que importa: a saúde.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Security Highlight -->
-        <section id="security" class="security">
-            <div class="container">
-                <div class="security-box">
-                    <div class="security-content">
-                        <h2>Privacidade é um direito, não um opcional</h2>
-                        <p>O NurseGuard utiliza criptografia AES-256 e armazena tudo localmente. Estamos em conformidade com a LGPD para garantir que seus dados sensíveis nunca saiam da sua mão</p>
-                        <ul class="security-list" aria-label="Garantias de segurança">
-                            <li>
-                                <span class="security-check-icon"><i data-lucide="check" aria-hidden="true"></i></span>
-                                Sem rastreadores
-                            </li>
-                            <li>
-                                <span class="security-check-icon"><i data-lucide="check" aria-hidden="true"></i></span>
-                                Sem anúncios
-                            </li>
-                            <li>
-                                <span class="security-check-icon"><i data-lucide="check" aria-hidden="true"></i></span>
-                                Criptografia de hardware (AES-256)
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="security-visual" aria-hidden="true">
-                        <div class="security-icon-ring security-ring-outer">
-                            <div class="security-icon-ring security-ring-inner">
-                                <div class="security-icon-center">
-                                    <i data-lucide="lock"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section class="section-spec-premium" id="pilar-3">
+            <div class="canvas-container spec-premium-grid">
+                <div class="spec-sticky-block">
+                    <span class="spec-index">ADESÃO TERAPÊUTICA</span>
+                    <h2>Alarme Persistente em Primeiro Plano.</h2>
+                </div>
+                <div class="spec-body-text">
+                    <p>
+                        Diga adeus às notificações ignoradas, O alarme do NurseGuard foi projetado para sobrepor qualquer outro aplicativo ou tela e o som persiste até que o usuário intencionalmente clique no botão indicando que tomou o remédio.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
+        <section class="section-spec-premium light-bg" id="pilar-4">
+            <div class="canvas-container spec-premium-grid">
+                <div class="spec-sticky-block">
+                    <span class="spec-index">SOBERANIA TECNOLÓGICA</span>
+                    <h2>Privacidade Absoluta e Offline Core.</h2>
+                </div>
+                <div class="spec-body-text">
+                    <p>
+                        O NurseGuard opera sob o princípio de <strong>borda local</strong>. Seus dados médicos, horários e fotos de remédios não são enviados para servidores externos nem alimentam perfis de telemetria comercial. O banco de dados permanece encriptado dentro do seu celular.
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cta" id="download">
+            <div class="canvas-container">
                 <div class="cta-box">
                     <h2>Pronto para cuidar melhor da sua saúde?</h2>
-                    <p>Conheça o aplicativo que foi criado pensando em você e sua família</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.teraverso.nurseguard&pcampaignid=web_share"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn-store btn-store-cta">
-                        <i data-lucide="play" aria-hidden="true"></i>
-                        Baixar no Google Play
-                    </a>
+                    <p>Conheça o aplicativo que foi criado pensando em você e sua família.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.teraverso.nurseguard&hl=pt_BR" target="_blank"" class="btn-cler-dark large-cta">Obter NurseGuard Grátis</a>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer id="download">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <a href="/" class="logo logo-white" aria-label="NurseGuard">
-                        <div class="logo-icon" aria-hidden="true">
-                            <div class="logo-center-square"></div>
-                        </div>
-                        <span>NurseGuard</span>
-                    </a>
-                    <p>Sua saúde sob controle com um toque lúdico</p>
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/nurseguard" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram do NurseGuard">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                                <circle cx="12" cy="12" r="4.5"/>
-                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.tiktok.com/@nurseguard.app" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok do NurseGuard">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
-                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
-                            </svg>
-                        </a>
-                    </div>
+    <footer class="cler-footer">
+        <div class="canvas-container footer-flex">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon" aria-hidden="true"><div class="logo-center-square"></div></div>
+                    <span>Nurse<span class="highlight-text">Guard</span></span>
                 </div>
-                <nav class="footer-links" aria-label="Links do rodapé">
-                    <a href="http://nurseguard.com.br/diferenciais/" target="_blank" rel="noopener noreferrer">Diferenciais</a>
-                    <a href="http://nurseguard.com.br/privacidade/" target="_blank" rel="noopener noreferrer">Privacidade</a>
-                    <a href="https://nurseguard.com.br/termosdeuso/" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
-                    <a href="mailto:contato@nurseguard.com.br">Contato</a>
-                </nav>
+                <p>Acessibilidade utilitária e privacidade local.</p>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Teraverso. NurseGuard é 100% local e seguro.</p>
+                <span>&copy; 2026 NurseGuard. Todos os direitos reservados.</span>
             </div>
         </div>
     </footer>
 
-    <script>
-        lucide.createIcons();
-
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 20);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
