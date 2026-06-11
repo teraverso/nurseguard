@@ -221,6 +221,17 @@ body {
     justify-content: center;
 }
 
+/* ==========================================================================
+   HERO — NOTA DE PREÇO
+   ========================================================================== */
+.hero-pricing-note {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0.01em;
+}
+
 .hero-image-wrapper {
     width: 100%;
     display: flex;
@@ -361,7 +372,7 @@ body {
    ========================================================================== */
 .section-how-works {
     padding: 100px 0;
-    background-color: #F0FDF4; /* Verde menta super suave, acolhedor e focado em saúde */
+    background-color: #F0FDF4;
     border-top: 1px solid var(--border-editorial);
 }
 
@@ -377,10 +388,10 @@ body {
     display: flex;
     gap: 40px;
     padding: 40px;
-    background-color: #FFFFFF; /* Branco puro para criar contraste perfeito sobre o fundo verde */
+    background-color: #FFFFFF;
     border-radius: 16px;
     align-items: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01); /* Sombra extremamente sutil para profundidade */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
 }
 
 .step-number {
@@ -422,10 +433,10 @@ body {
 }
 
 .card-icon {
-    color: var(--primary); /* Usa o roxo/índigo principal do app */
+    color: var(--primary);
     margin-bottom: 24px;
     display: inline-flex;
-    background-color: #EEF2FF; /* Um fundo circular suave para destacar o ícone */
+    background-color: #EEF2FF;
     padding: 12px;
     border-radius: 50%;
 }
@@ -433,7 +444,7 @@ body {
 .card-icon svg {
     width: 28px;
     height: 28px;
-    stroke-width: 2.5px; /* Deixa o traço um pouco mais espesso para facilitar a visão */
+    stroke-width: 2.5px;
 }
 
 .audience-card {
@@ -460,7 +471,7 @@ body {
 
 
 /* ==========================================================================
-   LAYOUT EXCLUSIVO 3 — SEÇÃO 7: DEPOIMENTOS (Fundo Azul/Indigo Suave com Aspas)
+   LAYOUT EXCLUSIVO 3 — SEÇÃO 7: DEPOIMENTOS
    ========================================================================== */
 .section-user-stories {
     padding: 100px 0;
@@ -508,19 +519,17 @@ body {
     background-color: var(--bg-pure);
     padding: 40px;
     border-radius: 16px;
-        
-    /* Ativa as duas colunas: Foto na esquerda, Texto na direita */
     display: flex;
     gap: 32px;
-    align-items: center; /* Centraliza a foto verticalmente em relação ao texto */
+    align-items: center;
 }
 
 .quote-avatar {
     width: 100px;
     height: 100px;
-    object-fit: cover; /* Garante que a foto preencha o quadrado sem distorcer */
-    border-radius: 12px; /* Cantos levemente arredondados para combinar com o design editorial */
-    flex-shrink: 0; /* Impede que a foto seja "esmagada" se o texto for muito grande */
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
 }
 
 .quote-content {
@@ -534,23 +543,7 @@ body {
     font-style: italic;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 0; /* Remove a margem antiga para alinhar perfeitamente */
-}
-
-.quote-author {
-    display: block;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    color: var(--text-muted);
-}
-
-.quote-text {
-    font-size: 1.3rem;
-    font-style: italic;
-    line-height: 1.6;
-    color: var(--text-secondary);
-    margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 .quote-author {
@@ -563,14 +556,14 @@ body {
 
 @media (max-width: 768px) {
     .custom-editorial-quote {
-        flex-direction: column; /* Empilha a foto em cima e o texto embaixo no celular */
-        align-items: flex-start; /* Alinha a foto à esquerda */
+        flex-direction: column;
+        align-items: flex-start;
         gap: 20px;
     }
 }
 
 /* ==========================================================================
-   LAYOUT EXCLUSIVO 4 — SEÇÃO 8: FAQ (Painéis Estilizados Stacked de Largura Total)
+   LAYOUT EXCLUSIVO 4 — SEÇÃO 8: FAQ
    ========================================================================== */
 .section-faq-list {
     padding: 100px 0;
@@ -622,7 +615,7 @@ body {
 
 
 /* ==========================================================================
-   RODAPÉ PREMIUM ASSIMÉTRICO (ORGANIZADO EM COLUNAS)
+   RODAPÉ PREMIUM ASSIMÉTRICO
    ========================================================================== */
 .cler-footer {
     padding: 80px 0 48px;
@@ -710,6 +703,7 @@ body {
     .editorial-lead { margin: 0 auto 32px; }
     .editorial-actions { justify-content: center; }
     .hero-image-wrapper { justify-content: center; }
+    .hero-pricing-note { text-align: center; }
     .spec-premium-grid { grid-template-columns: 1fr; gap: 40px; }
     .three-column-grid { grid-template-columns: 1fr; gap: 24px; }
     .step-card { flex-direction: column; text-align: center; gap: 20px; }
@@ -730,8 +724,8 @@ body {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    background-color: #000000; /* Fundo preto para parecer cinema enquanto carrega */
-    line-height: 0; /* Remove pequenos espaçamentos fantasmas abaixo do iframe */
+    background-color: #000000;
+    line-height: 0;
     border-top: 1px solid var(--border-editorial);
     border-bottom: 1px solid var(--border-editorial);
 }
@@ -739,7 +733,6 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    /* Truque moderno para manter a proporção de vídeo perfeita (16:9) em qualquer tela */
     aspect-ratio: 16 / 9; 
 }
 
