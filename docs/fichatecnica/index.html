@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset de cores para garantir que tudo seja preto */
+        :root {
+            --color-black: #000000;
+            --border-gray: #e0e0e0;
+            --bg-light: #f5f5f5;
+        }
+
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ficha-tecnica {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--color-black);
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        /* HIERARQUIA DE TÍTULOS */
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            border-top: 2px solid var(--color-black);
+            padding-top: 20px;
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        /* CONTEÚDO */
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+            background: var(--bg-light);
+            padding: 2px 4px;
+            font-weight: 600;
+        }
+
+        /* GRID TÉCNICO */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1px;
+            background-color: var(--color-black); /* Cria as linhas da tabela */
+            border: 1px solid var(--color-black);
+            margin-top: 20px;
+        }
+
+        .tech-item {
+            background-color: #ffffff;
+            padding: 15px;
+        }
+
+        .tech-item strong {
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+        }
+
+        .footer-tag {
+            margin-top: 60px;
+            border-top: 1px solid var(--border-gray);
+            padding-top: 20px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="ficha-tecnica">
+    <h1>Ficha Técnica NurseGuard</h1>
+    <span class="subtitle">Solução em HealthTech para adesão terapêutica e design inclusivo.</span>
+
+    <h2>01. Visão Geral</h2>
+    <p>O <strong>NurseGuard</strong> é um sistema gerenciador de medicamentos projetado para mitigar a baixa adesão terapêutica. A solução integra engenharia de software de alta performance com design cognitivo, focando na resiliência do sistema e na experiência do usuário final.</p>
+
+    <h2>02. Público e UX</h2>
+    <p>A arquitetura de interface foi desenvolvida sob os critérios de acessibilidade WCAG, com foco em:</p>
+    <ul>
+        <li><strong>Gerontodesign:</strong> Interfaces para idosos com zonas de toque expandidas e alto contraste.</li>
+        <li><strong>Neurodiversidade:</strong> Fluxos simplificados para usuários com TEA e TDAH, reduzindo a carga cognitiva e estímulos desnecessários.</li>
+        <li><strong>Multi-Perfil:</strong> Separação lógica entre perfis de Paciente e Cuidador.</li>
+    </ul>
+
+    <h2>03. Engenharia de Software</h2>
+    <h3>Arquitetura</h3>
+    <p>O projeto segue o padrão <strong>MVVM (Model-View-ViewModel)</strong>, garantindo separação de interesses e testabilidade. A interface é 100% declarativa, utilizando o framework <strong>Jetpack Compose</strong>.</p>
+    
+    <h3>Stack Tecnológica</h3>
+    <div class="tech-grid">
+        <div class="tech-item"><strong>Linguagem</strong>Kotlin</div>
+        <div class="tech-item"><strong>Ambiente</strong>Android Studio Panda 4</div>
+        <div class="tech-item"><strong>Persistência</strong>Room (SQLite)</div>
+        <div class="tech-item"><strong>DI</strong>Dagger Hilt</div>
+    </div>
+
+    <h3>Sistemas de Segundo Plano</h3>
+    <p>Utilização de <code>AlarmManager</code> de precisão e <code>WorkManager</code> para garantir o disparo de notificações críticas, contornando as otimizações de bateria agressivas do ecossistema Android.</p>
+
+    <h2>04. Segurança e Privacidade</h2>
+    <p>O sistema foi construído sob o princípio de <strong>Privacy by Design</strong>:</p>
+    <ul>
+        <li><strong>Armazenamento Local:</strong> Dados de saúde permanecem exclusivamente no hardware do usuário.</li>
+        <li><strong>Zero-Cloud:</strong> Inexistência de backend para armazenamento de dados sensíveis, eliminando vetores de ataque em nuvem.</li>
+        <li><strong>Criptografia:</strong> Proteção de credenciais de acesso via sistema de chaves do sistema operacional (Android Keystore).</li>
+    </ul>
+
+    <h2>05. Diferenciais Estratégicos</h2>
+    <ul>
+        <li><strong>Resiliência Offline:</strong> Operação plena sem dependência de conectividade.</li>
+        <li><strong>Gestão de Inventário:</strong> Algoritmo de controle de estoque com alertas preditivos (Semáforo Visual).</li>
+        <li><strong>Escalabilidade:</strong> Código modularizado que permite a implementação rápida de novas funcionalidades de telemetria de saúde.</li>
+    </ul>
+
+    <div class="footer-tag">
+        NurseGuard: Tecnologia que cuida, design que inclui.
+    </div>
+</div>
+
+</body>
+</html>

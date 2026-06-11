@@ -4,166 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Termos de Uso — NurseGuard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4F46E5;
-            --text-main: #111827;
-            --text-muted: #4B5563;
-            --bg: #FFFFFF;
-            --surface: #F3F4F6;
-            --accent-danger: #EF4444;
-            --official-dark: #080D10;
-            --official-teal: #2DD4BF;
+            --color-black: #000000;
+            --border-gray: #e0e0e0;
+            --bg-light: #f5f5f5;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
+            background-color: #ffffff;
             margin: 0;
             padding: 0;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--color-black);
+            line-height: 1.5;
         }
 
         .container {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 40px;
-            background: white;
-            border-radius: 32px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
         }
 
-        header {
+        /* HIERARQUIA DE TÍTULOS */
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            line-height: 0.9;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            border-bottom: 3px solid var(--color-black);
+            padding-bottom: 10px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* TEXTO E LISTAS */
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            font-weight: 800;
+        }
+
+        /* BOXES DE AVISO CRÍTICO */
+        .critical-box {
+            border: 2px solid var(--color-black);
+            padding: 25px;
+            margin: 30px 0;
+            background-color: var(--bg-light);
+        }
+
+        .critical-box h3 {
+            margin-top: 0;
+            text-decoration: underline;
+        }
+
+        .footer-tag {
+            margin-top: 80px;
+            border-top: 1px solid var(--color-black);
+            padding-top: 25px;
+            font-weight: 900;
             text-align: center;
-            margin-bottom: 50px;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
         }
-
-        /* LOGOTIPO OFICIAL */
-        .logo-icon {
-            width: 54px;
-            height: 54px;
-            background-color: var(--official-dark);
-            border-radius: 14px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
-        }
-
-        .logo-icon::before,
-        .logo-icon::after {
-            content: '';
-            position: absolute;
-            background-color: var(--official-teal);
-            border-radius: 2px;
-        }
-
-        .logo-icon::before { width: 32px; height: 10px; }
-        .logo-icon::after { width: 10px; height: 32px; }
-
-        .logo-center-square {
-            width: 8px;
-            height: 8px;
-            background-color: var(--official-dark);
-            z-index: 10;
-            border-radius: 1px;
-        }
-
-        h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 10px; }
-        h2 { font-size: 1.5rem; font-weight: 700; margin-top: 40px; color: var(--primary); border-bottom: 2px solid var(--surface); padding-bottom: 10px; }
-        
-        p, li { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 15px; }
-        
-        .alert-box {
-            background-color: #FFFBEB;
-            padding: 24px;
-            border-radius: 20px;
-            margin: 30px 0;
-        }
-
-        .alert-box h3 { margin: 0 0 10px 0; color: #92400E; font-size: 1.1rem; }
-
-        .critical-notice {
-            background-color: #FEF2F2;
-            padding: 24px;
-            border-radius: 20px;
-            margin: 30px 0;
-        }
-
-        .critical-notice h3 { margin: 0 0 10px 0; color: #991B1B; font-size: 1.1rem; }
-
-        footer { text-align: center; margin-top: 60px; padding-bottom: 40px; color: var(--text-muted); font-size: 0.9rem; }
 
         @media (max-width: 600px) {
-            .container { margin: 20px; padding: 20px; border-radius: 20px; }
-            h1 { font-size: 1.8rem; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <div class="logo-icon">
-                <div class="logo-center-square"></div>
-            </div>
-            <h1>Termos de Uso</h1>
-            <p>Última atualização: 4 de Junho de 2026</p>
-        </header>
+<div class="container">
+    <header>
+        <h1>Termos de Uso</h1>
+        <span class="subtitle">Última atualização: 4 de Junho de 2026</span>
+    </header>
 
-        <section>
-            <p>Bem-vindo ao <strong>NurseGuard</strong>. Ao utilizar nosso aplicativo, você concorda com os termos descritos abaixo. Leia-os atentamente.</p>
+    <section>
+        <p>Bem-vindo ao <strong>NurseGuard</strong>. Ao utilizar nosso aplicativo, você concorda integralmente com os termos descritos abaixo. O sistema foi projetado para auxiliar na adesão terapêutica sob diretrizes de responsabilidade técnica.</p>
 
-            <h2>1. Natureza do Serviço</h2>
-            <p>O NurseGuard é uma ferramenta projetada para auxiliar na <strong>adesão terapêutica</strong>. O aplicativo não substitui integralmente a supervisão de um profissional ou a responsabilidade do usuário.</p>
-            
-            <div class="critical-notice">
-                <h3>⚠️ AVISO IMPORTANTE DE SAÚDE</h3>
-                <p>O NurseGuard <strong>NÃO substitui</strong> um médico. O usuário deve <strong>seguir estritamente a prescrição médica</strong> conforme os horários estabelecidos pelo seu médico assistente.</p>
-                <p>O desenvolvedor <strong>não se responsabiliza por automedicação</strong> realizada sem a devida supervisão e orientação de um profissional de saúde.</p>
-            </div>
+        <h2>01. Natureza do Serviço</h2>
+        <p>O NurseGuard é uma ferramenta tecnológica de suporte. O aplicativo não substitui a supervisão de um profissional de saúde, o diagnóstico clínico ou a responsabilidade direta do usuário sobre seu tratamento.</p>
+        
+        <div class="critical-box">
+            <h3>⚠️ Aviso Importante de Saúde</h3>
+            <p>O NurseGuard <strong>NÃO substitui</strong> um médico. O usuário deve seguir estritamente a prescrição médica conforme os horários estabelecidos pelo seu médico assistente.</p>
+            <p>O desenvolvedor não se responsabiliza por automedicação ou alterações no tratamento realizadas sem a devida supervisão e orientação profissional.</p>
+        </div>
 
-            <h2>2. Responsabilidades do Usuário</h2>
+        <h2>02. Responsabilidades do Usuário</h2>
+        <ul>
+            <li><strong>Exatidão de Dados:</strong> Inserção correta de nomes, dosagens e horários conforme a orientação médica.</li>
+            <li><strong>Decisão Clínica:</strong> A decisão final de ingerir qualquer fármaco é sempre do usuário ou de seu responsável legal.</li>
+            <li><strong>Manutenção Técnica:</strong> Garantia de que o dispositivo possui carga de bateria e permissões ativas para o disparo dos alertas.</li>
+        </ul>
+
+        <h2>03. Interferências de Sistema</h2>
+        <div class="critical-box">
+            <h3>⚙️ Configurações do Dispositivo</h3>
+            <p>O funcionamento dos alarmes pode sofrer interferências de configurações nativas do Android, tais como:</p>
             <ul>
-                <li>Você é responsável por inserir corretamente os nomes, dosagens e horários conforme a orientação médica.</li>
-                <li>A decisão final de ingerir qualquer medicamento é sempre do usuário ou de seu responsável legal.</li>
-                <li>O app é uma ferramenta de apoio; a responsabilidade pelo cumprimento do tratamento é do usuário.</li>
+                <li>Modos "Não Perturbe" ou Silencioso.</li>
+                <li>Funções de Otimização de Bateria ou Economia de Energia agressivas.</li>
+                <li>Revogação manual de permissões de notificação pelo usuário.</li>
             </ul>
+        </div>
 
-            <h2>3. Interferências do Sistema Operacional</h2>
-            <div class="alert-box">
-                <h3>⚙️ CONFIGURAÇÕES DO CELULAR</h3>
-                <p>O funcionamento dos alarmes pode sofrer interferências das configurações do seu dispositivo. O NurseGuard pode falhar ou atrasar notificações devido ao:</p>
-                <ul>
-                    <li><strong>Modo Silencioso</strong> ou <strong>Não Perturbe</strong>.</li>
-                    <li>Funções de <strong>Economia de Bateria</strong> ou <strong>Otimização de Energia</strong>.</li>
-                    <li>Permissões de sistema revogadas pelo usuário.</li>
-                </ul>
-            </div>
+        <h2>04. Privacidade e Dados (LGPD)</h2>
+        <p>Em conformidade com a Lei Geral de Proteção de Dados, o NurseGuard opera de forma <strong>100% offline</strong>. Seus dados de saúde residem exclusivamente no hardware do seu dispositivo e nunca são transmitidos para servidores externos.</p>
 
-            <h2>4. Privacidade e Dados</h2>
-            <p>Em conformidade com a LGPD, o NurseGuard opera de forma <strong>100% offline</strong>. Seus dados de saúde são armazenados exclusivamente na memória do seu dispositivo e nunca são enviados para servidores externos.</p>
+        <h2>05. Limitação de Responsabilidade</h2>
+        <p>O desenvolvedor exime-se de responsabilidade técnica ou civil nos seguintes casos:</p>
+        <ul>
+            <li>Doses omitidas por falhas de hardware, bateria descarregada ou aparelhos desligados.</li>
+            <li>Consequências advindas de automedicação ou erros de cadastro pelo usuário.</li>
+            <li>Reações adversas a medicamentos ou decisões baseadas exclusivamente no uso do app.</li>
+        </ul>
 
-            <h2>5. Limitação de Responsabilidade</h2>
-            <p>O desenvolvedor do aplicativo não se responsabiliza por:</p>
-            <ul>
-                <li>Doses esquecidas devido a falhas técnicas, bateria descarregada ou aparelhos desligados.</li>
-                <li>Consequências advindas de <strong>automedicação</strong> ou erro de cadastro pelo usuário.</li>
-                <li>Reações adversas a medicamentos ou decisões baseadas exclusivamente no uso do app.</li>
-            </ul>
+        <h2>06. Governança e Alterações</h2>
+        <p>Reservamo-nos o direito de atualizar estes termos periodicamente. O uso continuado do aplicativo após alterações constitui aceitação das novas diretrizes.</p>
+    </section>
 
-            <h2>6. Alterações nos Termos</h2>
-            <p>Reservamo-nos o direito de atualizar estes termos. O uso continuado do aplicativo após alterações constitui aceitação dos novos termos.</p>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 Teraverso — Todos os direitos reservados.<br>
-            Cuidar de quem você ama deve ser simples e responsável.</p>
-        </footer>
+    <div class="footer-tag">
+        NurseGuard: Tecnologia que cuida, design que inclui.
     </div>
+</div>
 
 </body>
 </html>

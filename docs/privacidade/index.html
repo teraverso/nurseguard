@@ -1,202 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade — NurseGuard</title>
-    <!-- Importação da Fonte Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4F46E5;
-            --text-main: #111827;
-            --text-muted: #4B5563;
-            --bg: #FFFFFF;
-            --surface: #F3F4F6;
-            --official-dark: #080D10;
-            --official-teal: #2DD4BF;
-            --radius: 32px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --color-black: #000000;
+            --border-gray: #e0e0e0;
+            --bg-light: #f5f5f5;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--color-black);
+            line-height: 1.5;
+        }
+
+        .ficha-tecnica {
+            max-width: 850px;
+            margin: 40px auto;
             padding: 20px;
         }
 
-        .container {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 50px;
-            background: white;
-            border-radius: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        /* LOGOTIPO OFICIAL VIA CSS */
-        .logo-icon {
-            width: 54px;
-            height: 54px;
-            background-color: var(--official-dark);
-            border-radius: 14px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
-        }
-
-        .logo-icon::before,
-        .logo-icon::after {
-            content: '';
-            position: absolute;
-            background-color: var(--official-teal);
-            border-radius: 2px;
-        }
-
-        .logo-icon::before { width: 32px; height: 10px; }
-        .logo-icon::after { width: 10px; height: 32px; }
-
-        .logo-center-square {
-            width: 8px;
-            height: 8px;
-            background-color: var(--official-dark);
-            z-index: 10;
-            border-radius: 1px;
-        }
-
+        /* HIERARQUIA DE TÍTULOS */
         h1 {
-            font-size: 2.2rem;
-            font-weight: 800;
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 5px;
+            text-transform: uppercase;
             letter-spacing: -1px;
-            margin-bottom: 10px;
-            color: var(--text-main);
-            line-height: 1.2;
+            line-height: 1;
         }
 
-        .date {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 30px;
+        .subtitle {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 40px;
             display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 45px;
-            color: var(--primary);
-            border-bottom: 2px solid var(--surface);
-            padding-bottom: 12px;
-            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 800;
+            border-top: 3px solid var(--color-black);
+            padding-top: 20px;
+            margin-top: 50px;
+            text-transform: uppercase;
         }
 
-        p, li {
+        /* CONTEÚDO */
+        p {
             font-size: 1.05rem;
-            color: var(--text-muted);
             margin-bottom: 15px;
+            text-align: justify;
         }
 
         ul {
             padding-left: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         li {
             margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        strong {
+            font-weight: 700;
         }
 
         a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        a:hover {
+            color: var(--color-black);
+            font-weight: 800;
             text-decoration: underline;
         }
 
-        /* CAIXA DE CONTATO LÚDICA */
+        /* BOX DE CONTATO */
         .contact-box {
-            background-color: var(--surface);
-            padding: 24px;
-            margin-top: 30px;
-            border-radius: 20px;
+            border: 1px solid var(--color-black);
+            padding: 25px;
+            margin-top: 50px;
+            background-color: var(--bg-light);
             text-align: center;
         }
 
         .contact-box strong {
             display: block;
+            text-transform: uppercase;
             margin-bottom: 5px;
-            color: var(--text-main);
+            font-size: 0.9rem;
+        }
+
+        .footer-tag {
+            margin-top: 60px;
+            border-top: 1px solid var(--color-black);
+            padding-top: 20px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 0.9rem;
         }
 
         @media (max-width: 600px) {
-            .container { padding: 30px 20px; border-radius: 24px; }
-            h1 { font-size: 1.7rem; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <!-- Logo Oficial NurseGuard -->
-        <div class="logo-icon">
-            <div class="logo-center-square"></div>
-        </div>
-        <h1>Política de Privacidade</h1>
-        <span class="date">Última atualização: 22 de maio de 2026</span>
-    </header>
+<div class="ficha-tecnica">
+    <h1>Política de Privacidade</h1>
+    <span class="subtitle">Última atualização: 22 de maio de 2026</span>
 
     <p>Esta Política de Privacidade governa o uso do aplicativo <strong>NurseGuard</strong>, desenvolvido para dispositivos móveis. O aplicativo foi projetado com foco total na privacidade, servindo exclusivamente como um sistema local de alerta para administração de medicamentos.</p>
 
-    <h2>1. Coleta e Uso de Informações Pessoais</h2>
-    <p>O NurseGuard adota uma postura de minimização de dados:</p>
+    <h2>01. Coleta e Uso de Informações</h2>
+    <p>O NurseGuard adota uma postura técnica de minimização de dados:</p>
     <ul>
-        <li>Não coleta, não armazena e não transmite qualquer tipo de informação de identificação pessoal, tais como nome, e-mail, telefone ou arquivos do dispositivo.</li>
-        <li>Toda a lógica de funcionamento e armazenamento de dados ocorre de forma estritamente local e criptografada no seu dispositivo.</li>
+        <li><strong>Não Coleta:</strong> O aplicativo não coleta, não armazena e não transmite qualquer tipo de informação de identificação pessoal (PII), tais como nome, e-mail, telefone ou arquivos do dispositivo.</li>
+        <li><strong>Processamento Local:</strong> Toda a lógica de funcionamento e armazenamento de dados ocorre de forma estritamente local e criptografada no seu dispositivo.</li>
     </ul>
 
-    <h2>2. Funcionamento Off-line</h2>
+    <h2>02. Funcionamento Off-line</h2>
     <ul>
-        <li>O aplicativo funciona de forma totalmente off-line.</li>
-        <li>Não solicitamos acesso a recursos sensíveis como GPS, microfone ou contatos. As permissões solicitadas visam estritamente o disparo de notificações e alarmes precisos.</li>
+        <li>O aplicativo funciona de forma totalmente off-line, garantindo autonomia técnica.</li>
+        <li>Não solicitamos acesso a recursos sensíveis como GPS, microfone ou contatos. As permissões visam estritamente o disparo de notificações precisas.</li>
     </ul>
 
-    <h2>3. Serviços de Terceiros e Anúncios</h2>
-    <p>Para fins de sustentabilidade, o aplicativo poderá integrar o serviço Google AdMob.</p>
+    <h2>03. Serviços de Terceiros</h2>
+    <p>Para fins de sustentabilidade, o aplicativo integra o serviço Google AdMob para exibição de anúncios:</p>
     <ul>
         <li>O AdMob pode utilizar identificadores anônimos do dispositivo para exibir anúncios relevantes.</li>
-        <li>Nenhum dado pessoal é compartilhado com esta plataforma, visto que o aplicativo não os coleta.</li>
-        <li>Consulte a política do provedor aqui: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google AdMob Privacy Policy</a>.</li>
+        <li>Nenhum dado pessoal ou de saúde é compartilhado com esta plataforma.</li>
+        <li>Consulte a política do provedor aqui: <a href="https://policies.google.com/privacy" target="_blank">Google AdMob Privacy Policy</a>.</li>
     </ul>
 
-    <h2>4. Segurança dos Dados</h2>
-    <p>Como não realizamos upload para nuvem, seus dados estão protegidos contra interceptação de rede. O armazenamento local é protegido pelo sistema de chaves do próprio Android (Keystore).</p>
+    <h2>04. Segurança dos Dados</h2>
+    <p>Inexistência de upload para nuvem, protegendo os dados contra interceptação de rede. O armazenamento local é protegido pelo sistema de chaves do próprio Android (<strong>Keystore</strong>).</p>
 
-    <h2>5. Alterações nesta Política</h2>
-    <p>Esta página poderá ser atualizada periodicamente. Recomendamos a revisão eventual para verificar modificações, que entram em vigor imediatamente após a publicação.</p>
-
-    <h2>6. Contato e Suporte</h2>
-    <p>Se você tiver qualquer dúvida ou sugestão sobre nossas práticas de privacidade, entre em contato:</p>
+    <h2>05. Alterações e Contato</h2>
+    <p>Esta política poderá ser atualizada periodicamente. Recomendamos a revisão eventual para verificar modificações que entram em vigor imediatamente após a publicação.</p>
     
     <div class="contact-box">
         <strong>Teraverso Tecnologia</strong>
+        <span>Suporte técnico e Privacidade</span><br>
         <a href="mailto:edson@teraverso.com">edson@teraverso.com</a>
+    </div>
+
+    <div class="footer-tag">
+        NurseGuard: Tecnologia que cuida, design que inclui.
     </div>
 </div>
 

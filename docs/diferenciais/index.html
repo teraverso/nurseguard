@@ -1,226 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diferenciais Estratégicos — NurseGuard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4F46E5;
-            --text-main: #111827;
-            --text-muted: #4B5563;
-            --bg: #FFFFFF;
-            --surface: #F3F4F6;
-            --official-dark: #080D10;
-            --official-teal: #2DD4BF;
-            --radius: 32px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --color-black: #000000;
+            --border-gray: #e0e0e0;
+            --bg-light: #f5f5f5;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 20px;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
         }
 
-        .container {
+        .ficha-tecnica {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--color-black);
             max-width: 850px;
             margin: 40px auto;
-            padding: 50px;
-            background: white;
-            border-radius: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            padding: 20px;
+            line-height: 1.5;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .logo-icon {
-            width: 54px;
-            height: 54px;
-            background-color: var(--official-dark);
-            border-radius: 14px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
-        }
-
-        .logo-icon::before,
-        .logo-icon::after {
-            content: '';
-            position: absolute;
-            background-color: var(--official-teal);
-            border-radius: 2px;
-        }
-
-        .logo-icon::before { width: 32px; height: 10px; }
-        .logo-icon::after  { width: 10px; height: 32px; }
-
-        .logo-center-square {
-            width: 8px;
-            height: 8px;
-            background-color: var(--official-dark);
-            z-index: 10;
-            border-radius: 1px;
-        }
-
+        /* HIERARQUIA DE TÍTULOS */
         h1 {
-            font-size: 2.2rem;
-            font-weight: 800;
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 5px;
+            text-transform: uppercase;
             letter-spacing: -1px;
-            margin-bottom: 10px;
-            color: var(--text-main);
-            line-height: 1.2;
+            line-height: 1;
         }
 
-        .date {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 30px;
+        .subtitle {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 40px;
             display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 45px;
-            color: var(--primary);
-            border-bottom: 2px solid var(--surface);
-            padding-bottom: 12px;
-            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 800;
+            border-top: 3px solid var(--color-black);
+            padding-top: 20px;
+            margin-top: 50px;
+            text-transform: uppercase;
         }
 
-        p, li {
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        /* CONTEÚDO */
+        p {
             font-size: 1.05rem;
-            color: var(--text-muted);
             margin-bottom: 15px;
+            text-align: justify;
         }
 
         ul {
             padding-left: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         li {
             margin-bottom: 12px;
-        }
-
-        li strong {
-            color: var(--text-main);
-        }
-
-        .badge-pilar {
-            display: inline-block;
-            font-size: 0.78rem;
-            font-weight: 700;
-            background: #EEF2FF;
-            color: var(--primary);
-            padding: 4px 14px;
-            border-radius: 50px;
-            margin-bottom: 16px;
-            letter-spacing: 0.02em;
-        }
-
-        .destaque-box {
-            background-color: var(--surface);
-            padding: 20px 24px;
-            border-radius: 20px;
-            margin: 30px 0;
             font-size: 1.05rem;
-            color: var(--text-muted);
-            font-weight: 500;
         }
 
-        .resumo-box {
-            background-color: var(--surface);
-            padding: 24px;
-            border-radius: 20px;
-            margin-top: 40px;
-        }
-
-        .resumo-box p:first-child {
+        strong {
             font-weight: 700;
-            color: var(--text-main);
-            margin-bottom: 8px;
         }
 
-        footer {
-            text-align: center;
+        /* BOXES DE DESTAQUE TÉCNICO */
+        .resumo-box {
+            border: 1px solid var(--color-black);
+            padding: 25px;
+            margin-top: 50px;
+            background-color: var(--bg-light);
+        }
+
+        .resumo-box strong {
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .footer-tag {
             margin-top: 60px;
-            padding-top: 30px;
-            border-top: 2px solid var(--surface);
-            color: var(--text-muted);
+            border-top: 1px solid var(--color-black);
+            padding-top: 20px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
             font-size: 0.9rem;
         }
 
         @media (max-width: 600px) {
-            .container { padding: 30px 20px; border-radius: 24px; }
-            h1 { font-size: 1.7rem; }
-            h2 { font-size: 1.3rem; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <div class="logo-icon">
-            <div class="logo-center-square"></div>
-        </div>
-        <h1>Diferenciais Estratégicos</h1>
-        <span class="date">Soberania digital · Resiliência offline · Acessibilidade cognitiva rigorosa</span>
-    </header>
+<div class="ficha-tecnica">
+    <h1>Diferenciais Estratégicos</h1>
+    <span class="subtitle">Soberania digital · Resiliência offline · Acessibilidade cognitiva</span>
 
-    <p>O <strong>NurseGuard</strong> se posiciona no mercado com uma proposta de valor <strong>disruptiva</strong> ao inverter a lógica da maioria dos grandes aplicativos de saúde. Enquanto os concorrentes focam em ecossistemas baseados em nuvem, coleta de dados e conectividade constante, o NurseGuard aposta na <strong>soberania digital, resiliência offline e acessibilidade cognitiva estrita</strong>.</p>
+    <h2>01. Posicionamento de Mercado</h2>
+    <p>O <strong>NurseGuard</strong> inverte a lógica convencional dos aplicativos de saúde modernos ao apostar na <strong>soberania digital e autonomia técnica</strong>. Enquanto o mercado converge para ecossistemas em nuvem e coleta massiva de dados, nossa arquitetura prioriza a resiliência absoluta e a privacidade do usuário final.</p>
 
-    <div class="destaque-box">
-        Seus diferenciais competitivos e vantagens estratégicas podem ser divididos em três pilares fundamentais:
-    </div>
-
-    <h2>1. Vantagem Competitiva em Privacidade e Segurança</h2>
-    <p>Em um cenário onde vazamentos de dados de saúde e rastreamento para publicidade digital são preocupações crescentes, a arquitetura técnica do NurseGuard oferece segurança de nível militar:</p>
+    <h2>02. Pilares de Privacidade (Zero-Trust)</h2>
+    <p>A arquitetura técnica oferece segurança de nível crítico através de quatro camadas fundamentais:</p>
     <ul>
-        <li><strong>Soberania Absoluta dos Dados (Zero-Trust):</strong> Como o aplicativo não possui servidores externos e armazena os dados exclusivamente de forma local, o usuário tem controle total sobre suas informações médicas. Não há risco de invasão de servidores de terceiros ou vazamento de dados.</li>
-        <li><strong>Criptografia na Origem (AES-256 Local):</strong> Diferente de apps que apenas criptografam os dados ao enviá-los para a internet, o NurseGuard cifra o banco de dados diretamente no armazenamento físico do celular.</li>
-        <li><strong>Autenticação Local:</strong> A presença de login e senha locais cria uma camada de proteção física — se alguém pegar o celular desbloqueado do usuário, ainda assim não terá acesso ao histórico de medicamentos.</li>
-        <li><strong>Zero Rastreamento:</strong> A ausência total de telemetria, ferramentas de análise de comportamento e SDKs de publicidade garante anonimato e privacidade absoluta.</li>
+        <li><strong>Soberania de Dados:</strong> Armazenamento estritamente local. O usuário detém a posse física de sua base de dados, eliminando riscos de invasões de servidores centralizados.</li>
+        <li><strong>Criptografia Nativa:</strong> Implementação de cifras AES-256 diretamente no armazenamento físico do dispositivo (Data-at-Rest Protection).</li>
+        <li><strong>Autenticação de Hardware:</strong> Proteção via Android Keystore, garantindo que o acesso ao histórico de medicação seja isolado do restante do sistema operacional.</li>
+        <li><strong>Zero Telemetria:</strong> Ausência total de SDKs de rastreamento ou ferramentas de análise comportamental, garantindo anonimato técnico absoluto.</li>
     </ul>
 
-    <h2>2. Diferenciais de Design Inclusivo e Neurodiversidade</h2>
-    <p>A maioria dos aplicativos tenta abraçar muitos recursos, gerando poluição visual. O NurseGuard foca no design centrado no usuário para públicos específicos:</p>
+    <h2>03. Design Inclusivo e Neurodiversidade</h2>
+    <p>O foco no design centrado no usuário para públicos com necessidades cognitivas específicas:</p>
     <ul>
-        <li><strong>Otimização para TEA, TDAH e Idosos:</strong> O layout minimalista com fontes ampliadas e alto contraste de cores combate a fadiga cognitiva e facilita a leitura para pessoas com baixa visão ou dificuldades de atenção.</li>
-        <li><strong>Memória Visual Ativa (Foto no Alarme):</strong> Exibir a foto real do medicamento diretamente na tela de disparo do alarme reduz drasticamente o risco de troca de medicação — um erro perigoso e muito comum entre idosos que tomam múltiplos comprimidos parecidos.</li>
-        <li><strong>Alarme Persistente com Bloqueio de Tela:</strong> Ao sobrepor outros aplicativos e a tela de bloqueio, o alarme impede o comportamento reflexo de apenas "limpar a notificação". Ele exige uma tomada de decisão ativa — Tomei, Adiar ou Pular.</li>
+        <li><strong>Redução de Fadiga Cognitiva:</strong> Layout otimizado para TEA (Transtorno do Espectro Autista) e TDAH, removendo estímulos visuais desnecessários e focando em "uma ação por vez".</li>
+        <li><strong>Validação Visual Ativa:</strong> O sistema exibe a fotografia real do medicamento no momento do alarme, mitigando erros de identificação visual, comuns em polifarmácia geriátrica.</li>
+        <li><strong>Interface de Interrupção Crítica:</strong> Alarmes persistentes que exigem tomada de decisão ativa, prevenindo o fechamento acidental de notificações importantes.</li>
     </ul>
 
-    <h2>3. Resiliência Operacional (Autonomia Técnica)</h2>
-    <p>O aplicativo elimina qualquer ponto único de falha atrelado à infraestrutura de rede:</p>
+    <h2>04. Resiliência Operacional</h2>
+    <p>Eliminação de pontos únicos de falha dependentes de infraestrutura de rede:</p>
     <ul>
-        <li><strong>Operação 100% Offline:</strong> O fato de não exigir conexão com a internet — nem para a configuração inicial nem para o cadastro de novos remédios — torna o app imune a oscilações de sinal, quedas de servidor externo ou falta de plano de dados.</li>
-        <li><strong>Independência de APIs de Terceiros:</strong> Não depende de um banco de dados de medicamentos online para funcionar. Se o servidor de um concorrente cai, o cadastro deles falha; o NurseGuard permanece totalmente operacional.</li>
+        <li><strong>Autonomia Offline:</strong> Operação plena sem conectividade. Imune a oscilações de sinal, quedas de servidores ou ausência de planos de dados.</li>
+        <li><strong>Independência de APIs:</strong> O sistema não depende de bancos de dados externos para cadastros ou validações, garantindo funcionamento ininterrupto em qualquer cenário global.</li>
     </ul>
 
     <div class="resumo-box">
-        <p>Resumo estratégico</p>
-        <p>Em um mercado dominado por ecossistemas em nuvem e rastreamento de dados, o NurseGuard entrega soberania total, segurança com criptografia local, design focado em neurodiversidade e operação offline robusta — uma proposta que atende às crescentes demandas por privacidade, inclusão e autonomia digital.</p>
+        <strong>Resumo Estratégico para Investidores</strong>
+        <p>O NurseGuard entrega uma solução robusta que atende às crescentes demandas regulatórias por privacidade (LGPD) e inclusão digital. Ao unir segurança com criptografia local e um design focado em neurodiversidade, o projeto estabelece uma vantagem competitiva sustentável em um mercado saturado por soluções genéricas dependentes de conectividade.</p>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Teraverso — Todos os direitos reservados.</p>
-    </footer>
+    <div class="footer-tag">
+        NurseGuard: Tecnologia que cuida, design que inclui.
+    </div>
 </div>
 
 </body>
