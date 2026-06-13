@@ -284,6 +284,7 @@ body {
    TELAS DO APLICATIVO — FOTO FULL WIDTH
    ========================================================================== */
 .section-app-screens {
+    padding-bottom: 80px;
     border-top: 1px solid var(--border-editorial);
     border-bottom: 1px solid var(--border-editorial);
     background-color: var(--bg-subtle);
@@ -291,24 +292,42 @@ body {
 
 .app-screens-label {
     text-align: center;
-    padding: 48px 0 32px;
+    padding: 48px 0 40px;
 }
 
-.app-screens-image {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    line-height: 0;
+.mockups-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
 }
 
-.app-screens-image img {
+.phone-mockup {
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+    aspect-ratio: 9 / 19.5;
+    background: #09090B;
+    border-radius: 44px;
+    padding: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 4px solid #27272A;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: #F4F4F5;
+    border-radius: 34px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-img {
+    color: #71717A;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 /* ==========================================================================
@@ -814,6 +833,7 @@ body {
     .hero-image-wrapper { justify-content: center; }
     .hero-pricing-note { text-align: center; }
     .spec-premium-grid { grid-template-columns: 1fr; gap: 40px; }
+    .mockups-grid { grid-template-columns: repeat(2, 1fr); }
     .three-column-grid { grid-template-columns: 1fr; gap: 24px; }
     .step-card { flex-direction: column; text-align: center; gap: 20px; }
     .footer-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
@@ -824,6 +844,34 @@ body {
 }
 
 @media (max-width: 640px) {
+    .mockups-grid { grid-template-columns: 1fr; max-width: 320px; margin: 0 auto; }
     .cta-actions { flex-direction: column; gap: 32px; }
+/* Fachada de Vídeo (Rec 1) */
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #11141A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.play-button {
+    width: 80px;
+    height: 80px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.video-placeholder-label {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
     .cta-qr-block { display: none; } /* QR Code oculto em mobile — não faz sentido escanear num celular */
 }
