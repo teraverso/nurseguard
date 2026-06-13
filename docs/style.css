@@ -8,11 +8,8 @@
     --text-primary: #09090B;
     --text-secondary: #27272A;
     --text-muted: #71717A;
-    
-    /* Identidade Original NurseGuard */
-    --primary: #4F46E5;       
-    --accent-teal: #2DD4BF;   
-    
+    --primary: #4F46E5;
+    --accent-teal: #2DD4BF;
     --border-editorial: #E4E4E7;
     --font-editorial: 'Plus Jakarta Sans', sans-serif;
     --bezier-premium: cubic-bezier(0.16, 1, 0.3, 1);
@@ -37,7 +34,7 @@ body {
 }
 
 .canvas-container {
-    max-width: 1280px; 
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -73,11 +70,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
     max-width: 1280px;
     margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 24px 40px;
 }
 
 .logo {
@@ -91,9 +86,7 @@ body {
     text-decoration: none;
 }
 
-.logo .highlight-text {
-    color: var(--primary);
-}
+.logo .highlight-text { color: var(--primary); }
 
 .logo-icon {
     width: 36px;
@@ -114,7 +107,7 @@ body {
 }
 
 .logo-icon::before { width: 22px; height: 8px; }
-.logo-icon::after { width: 8px; height: 22px; }
+.logo-icon::after  { width: 8px;  height: 22px; }
 
 .logo-center-square {
     width: 6px;
@@ -131,13 +124,6 @@ body {
     gap: 32px;
 }
 
-.menu-item {
-    text-decoration: none;
-    color: var(--text-primary);
-    font-weight: 600;
-    font-size: 0.95rem;
-}
-
 .btn-premium-nav {
     background: #18181B;
     color: var(--bg-pure);
@@ -149,7 +135,7 @@ body {
 }
 
 /* ==========================================================================
-   HERO GRID REVERTIDA (LAYOUT EQUILIBRADO ORIGINAL)
+   HERO
    ========================================================================== */
 .section-hero {
     padding: 70px 0 60px;
@@ -158,9 +144,9 @@ body {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.3fr 0.7fr; 
+    grid-template-columns: 1.3fr 0.7fr;
     gap: 60px;
-    align-items: end; 
+    align-items: end;
 }
 
 .giant-display-title {
@@ -201,11 +187,6 @@ body {
     height: 58px;
 }
 
-.arrow-diagonal {
-    width: 14px;
-    height: 14px;
-}
-
 .btn-cler-subtle {
     background: transparent;
     color: var(--text-primary);
@@ -221,9 +202,6 @@ body {
     justify-content: center;
 }
 
-/* ==========================================================================
-   HERO — NOTA DE PREÇO
-   ========================================================================== */
 .hero-pricing-note {
     margin-top: 20px;
     font-size: 0.875rem;
@@ -241,14 +219,14 @@ body {
 
 .hero-family-img {
     width: 100%;
-    max-width: 580px; 
+    max-width: 580px;
     height: auto;
     display: block;
     object-fit: contain;
 }
 
 /* ==========================================================================
-   ESTRUTURA PERFEITA PADRONIZADA: ASYMMETRIC TWO-COLUMN GRID
+   SPEC SECTIONS
    ========================================================================== */
 .section-spec-premium {
     padding: 100px 0;
@@ -271,7 +249,7 @@ body {
     display: block;
     font-family: monospace;
     font-size: 0.85rem;
-    color: #4F46E5; 
+    color: #4F46E5;
     font-weight: 700;
     margin-bottom: 16px;
     letter-spacing: 0.05em;
@@ -303,41 +281,45 @@ body {
 }
 
 /* ==========================================================================
-   SEÇÃO DE CONVERSÃO (CTA)
+   TELAS DO APLICATIVO — FOTO FULL WIDTH
    ========================================================================== */
-.section-cta {
-    padding: 120px 0;
-    background-color: var(--text-primary);
-    color: var(--bg-pure);
+.section-app-screens {
+    border-top: 1px solid var(--border-editorial);
+    border-bottom: 1px solid var(--border-editorial);
+    background-color: var(--bg-subtle);
+}
+
+.app-screens-label {
     text-align: center;
+    padding: 48px 0 32px;
 }
 
-.cta-box h2 {
-    font-size: 2.6rem;
-    font-weight: 800;
-    margin-bottom: 16px;
-    letter-spacing: -0.03em;
+.app-screens-image {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    line-height: 0;
 }
 
-.cta-box p {
-    color: var(--text-muted);
-    margin-bottom: 36px;
-    font-size: 1.15rem;
-}
-
-.large-cta {
-    display: inline-block;
-    background-color: var(--bg-pure);
-    color: var(--text-primary);
+.app-screens-image img {
+    width: 100%;
     height: auto;
-    line-height: 58px;
-    padding: 0 44px;
+    display: block;
+    object-fit: cover;
 }
-
 
 /* ==========================================================================
-   ELEMENTOS DE CABEÇALHO COMPARTILHADOS PELAS NOVAS SEÇÕES
+   COMO FUNCIONA
    ========================================================================== */
+.section-how-works {
+    padding: 100px 0;
+    background-color: #F0FDF4;
+    border-top: 1px solid var(--border-editorial);
+}
+
 .centered-header {
     text-align: center;
     max-width: 700px;
@@ -364,16 +346,6 @@ body {
     font-weight: 700;
     margin-bottom: 16px;
     letter-spacing: 0.05em;
-}
-
-
-/* ==========================================================================
-   LAYOUT EXCLUSIVO 1 — SEÇÃO 5: COMO FUNCIONA (ATUALIZADA)
-   ========================================================================== */
-.section-how-works {
-    padding: 100px 0;
-    background-color: #F0FDF4;
-    border-top: 1px solid var(--border-editorial);
 }
 
 .vertical-steps-container {
@@ -416,9 +388,39 @@ body {
     color: var(--text-secondary);
 }
 
+/* ==========================================================================
+   VÍDEO FULL WIDTH
+   ========================================================================== */
+.section-full-video {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #000000;
+    line-height: 0;
+    border-top: 1px solid var(--border-editorial);
+    border-bottom: 1px solid var(--border-editorial);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* ==========================================================================
-   LAYOUT EXCLUSIVO 2 — SEÇÃO 6: PARA QUEM É (3 Colunas Lado a Lado / Cards Grid)
+   PÚBLICO-ALVO
    ========================================================================== */
 .section-target-audience {
     padding: 100px 0;
@@ -469,13 +471,12 @@ body {
     color: var(--text-secondary);
 }
 
-
 /* ==========================================================================
-   LAYOUT EXCLUSIVO 3 — SEÇÃO 7: DEPOIMENTOS
+   DEPOIMENTOS
    ========================================================================== */
 .section-user-stories {
     padding: 100px 0;
-    background-color: #EEF2FF; 
+    background-color: #EEF2FF;
     border-top: 1px solid var(--border-editorial);
 }
 
@@ -563,7 +564,7 @@ body {
 }
 
 /* ==========================================================================
-   LAYOUT EXCLUSIVO 4 — SEÇÃO 8: FAQ
+   FAQ
    ========================================================================== */
 .section-faq-list {
     padding: 100px 0;
@@ -571,9 +572,7 @@ body {
     border-top: 1px solid var(--border-editorial);
 }
 
-.faq-left-header {
-    margin-bottom: 50px;
-}
+.faq-left-header { margin-bottom: 50px; }
 
 .faq-left-header h2 {
     font-size: 2.5rem;
@@ -613,9 +612,122 @@ body {
     color: var(--text-secondary);
 }
 
+/* ==========================================================================
+   CTA FINAL
+   ========================================================================== */
+.section-cta {
+    padding: 120px 0;
+    background-color: var(--text-primary);
+    color: var(--bg-pure);
+    text-align: center;
+}
+
+.cta-box h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.03em;
+}
+
+.cta-box p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 1.15rem;
+}
+
+/* Ações do CTA: botão + QR Code lado a lado */
+.cta-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.large-cta {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--bg-pure);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 20px 44px;
+    border-radius: 8px;
+    height: auto;
+    transition: opacity 0.2s ease;
+}
+
+.large-cta:hover { opacity: 0.92; }
+
+/* QR Code block */
+.cta-qr-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-qr-link {
+    display: block;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    line-height: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.cta-qr-link:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.28);
+}
+
+.qr-code-img {
+    display: block;
+    width: 140px;
+    height: 140px;
+}
+
+.cta-qr-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.02em;
+}
+
+/* Divisor visual entre botão e QR */
+.cta-actions::before {
+    display: none;
+}
+
+/* Separador "ou" entre botão e QR */
+.cta-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.2);
+}
+
+.cta-divider::before,
+.cta-divider::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 32px;
+    background: rgba(255,255,255,0.15);
+}
+
+.cta-divider span {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
 
 /* ==========================================================================
-   RODAPÉ PREMIUM ASSIMÉTRICO
+   FOOTER
    ========================================================================== */
 .cler-footer {
     padding: 80px 0 48px;
@@ -682,9 +794,7 @@ body {
     transition: color 0.2s ease;
 }
 
-.footer-links-column a:hover {
-    color: var(--primary);
-}
+.footer-links-column a:hover { color: var(--primary); }
 
 .footer-bottom {
     border-top: 1px solid var(--border-editorial);
@@ -693,9 +803,8 @@ body {
     font-size: 0.9rem;
 }
 
-
 /* ==========================================================================
-   RESPONSIVIDADE DE PROTEÇÃO TOTAL
+   RESPONSIVIDADE
    ========================================================================== */
 @media (max-width: 1024px) {
     .nav-wrapper { padding: 20px; }
@@ -714,33 +823,7 @@ body {
     .footer-bottom { text-align: center; }
 }
 
-/* ==========================================================================
-   SEÇÃO VÍDEO FULL-WIDTH (PREMIUM & RESPONSIVO)
-   ========================================================================== */
-.section-full-video {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    background-color: #000000;
-    line-height: 0;
-    border-top: 1px solid var(--border-editorial);
-    border-bottom: 1px solid var(--border-editorial);
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9; 
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media (max-width: 640px) {
+    .cta-actions { flex-direction: column; gap: 32px; }
+    .cta-qr-block { display: none; } /* QR Code oculto em mobile — não faz sentido escanear num celular */
 }
