@@ -3,6 +3,7 @@
    ========================================================================== */
 
 :root {
+    /* Cores Principais */
     --bg-pure: #FFFFFF;
     --bg-subtle: #F9F9FB;
     --text-primary: #09090B;
@@ -10,11 +11,14 @@
     --text-muted: #71717A;
     --primary: #4F46E5;
     --accent-teal: #2DD4BF;
+    /* Design Editorial */
     --border-editorial: #E4E4E7;
     --font-editorial: 'Plus Jakarta Sans', sans-serif;
+    /* Curva de Animação Premium */
     --bezier-premium: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Reset Básico */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -26,6 +30,7 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Base do Body */
 body {
     font-family: var(--font-editorial);
     color: var(--text-primary);
@@ -33,12 +38,14 @@ body {
     overflow-x: hidden;
 }
 
+/* Container Centralizado */
 .canvas-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
+/* Progresso de Leitura Superior */
 .top-progress-bar {
     position: fixed;
     top: 0;
@@ -62,10 +69,12 @@ body {
     transition: border-color 0.2s ease;
 }
 
+/* Efeito ao rolar a página */
 .cler-nav.scrolled {
     border-bottom: 1px solid var(--border-editorial);
 }
 
+/* Wrapper da Navbar */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -75,6 +84,7 @@ body {
     padding: 24px 40px;
 }
 
+/* Logo do Projeto */
 .logo {
     display: flex;
     align-items: center;
@@ -124,6 +134,7 @@ body {
     gap: 32px;
 }
 
+/* Botão de Download na Nav */
 .btn-premium-nav {
     background: #18181B;
     color: var(--bg-pure);
@@ -142,6 +153,7 @@ body {
     background-color: var(--bg-pure);
 }
 
+/* Grid do Hero */
 .hero-grid {
     display: grid;
     grid-template-columns: 1.3fr 0.7fr;
@@ -158,6 +170,7 @@ body {
     margin-bottom: 28px;
 }
 
+/* Texto de Introdução */
 .editorial-lead {
     font-size: 1.25rem;
     color: var(--text-secondary);
@@ -173,6 +186,7 @@ body {
     gap: 16px;
 }
 
+/* Botões do Hero */
 .btn-cler-dark {
     background: #11141A;
     color: var(--bg-pure);
@@ -295,12 +309,14 @@ body {
     padding: 48px 0 40px;
 }
 
+/* Grid dos Mockups */
 .mockups-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
 }
 
+/* Estrutura Física do Celular Simulada */
 .phone-mockup {
     width: 100%;
     aspect-ratio: 9 / 19.5;
@@ -320,6 +336,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.mockup-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 100%;     /* Força a imagem a ocupar toda a largura interna */
+    height: auto;    /* Mantém a proporção original, evitando que fique torta */
+    flex-shrink: 0;  /* Garante que o flexbox não tente espremer a imagem */
 }
 
 .placeholder-img {
@@ -367,6 +394,7 @@ body {
     letter-spacing: 0.05em;
 }
 
+/* Cards de Passo a Passo */
 .vertical-steps-container {
     max-width: 850px;
     margin: 0 auto;
@@ -423,6 +451,7 @@ body {
     border-bottom: 1px solid var(--border-editorial);
 }
 
+/* Container do Vídeo (16:9) */
 .video-container {
     position: relative;
     width: 100%;

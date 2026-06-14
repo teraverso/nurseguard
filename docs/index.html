@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-        <meta charset="UTF-8">
+    <!-- Configurações Básicas e Responsividade -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>NurseGuard | App de Lembrete de Remédios Gratuito — Offline e Seguro</title>
 
+    <!-- SEO e Metadados do Buscador -->
     <meta name="description" content="NurseGuard é o app gratuito de lembrete de remédios para Android. Alarmes lúdicos com foto da embalagem, 100% offline, criptografia AES-256 e conformidade com a LGPD. Ideal para idosos, TDAH e TEA.">
     <meta name="author" content="Teraverso">
     <meta name="publisher" content="Teraverso">
@@ -21,6 +23,7 @@
     <link rel="alternate" hreflang="pt-BR" href="https://www.nurseguard.com.br/">
     <link rel="alternate" hreflang="x-default" href="https://www.nurseguard.com.br/">
 
+    <!-- Open Graph / Facebook (Compartilhamento Social) -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="NurseGuard">
     <meta property="og:locale" content="pt_BR">
@@ -32,6 +35,7 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="NurseGuard — App de lembrete de remédios lúdico e acessível">
 
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@nurseguard">
     <meta name="twitter:creator" content="@teraverso">
@@ -41,6 +45,7 @@
     <meta name="twitter:image" content="https://www.nurseguard.com.br/assets/og-image.png">
     <meta name="twitter:image:alt" content="Tela do app NurseGuard com alarme de remédio">
 
+    <!-- Ícones e Cores de Sistema (PWA/Mobile) -->
     <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#3730A3" media="(prefers-color-scheme: dark)">
     <meta name="mobile-web-app-capable" content="yes">
@@ -56,23 +61,28 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
+    <!-- Performance: Pre-conexão de Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" as="style">
 
+    <!-- Dados Estruturados (JSON-LD) para o Google -->
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.nurseguard.com.br/#organization","name":"Teraverso","alternateName":"NurseGuard","url":"https://www.nurseguard.com.br/","logo":{"@type":"ImageObject","url":"https://www.nurseguard.com.br/assets/logo.png","width":400,"height":400},"description":"Teraverso é uma empresa de tecnologia criadora do NurseGuard, o app gratuito de lembrete de medicamentos com foco em acessibilidade para idosos, TDAH e TEA.","foundingDate":"2024","knowsAbout":["saúde digital","acessibilidade","LGPD","medicamentos","TDAH","TEA","idosos"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"contato@nurseguard.com.br","availableLanguage":"Portuguese","areaServed":"BR"},"sameAs":["https://play.google.com/store/apps/details?id=com.teraverso.nurseguard","https://www.instagram.com/nurseguard","https://www.tiktok.com/@nurseguard.app"]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.nurseguard.com.br/#website","name":"NurseGuard","alternateName":"NurseGuard — Lembrete de Remédios","url":"https://www.nurseguard.com.br/","description":"Site oficial do NurseGuard, app gratuito de lembrete de medicamentos para Android.","inLanguage":"pt-BR","publisher":{"@id":"https://www.nurseguard.com.br/#organization"}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","@id":"https://www.nurseguard.com.br/#app","name":"NurseGuard","alternateName":"NurseGuard — Lembrete de Remédios","description":"App gratuito de lembrete de medicamentos com alarmes lúdicos, foto da embalagem, 100% offline, criptografia AES-256 e conformidade com a LGPD. Ideal para idosos, TDAH e TEA.","url":"https://www.nurseguard.com.br/","downloadUrl":"https://play.google.com/store/apps/details?id=com.teraverso.nurseguard","installUrl":"https://play.google.com/store/apps/details?id=com.teraverso.nurseguard","applicationCategory":"HealthApplication","applicationSubCategory":"Medication Reminder","operatingSystem":"Android 8.0+","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","ratingCount":"120","bestRating":"5","worstRating":"1"},"screenshot":"https://www.nurseguard.com.br/assets/screenshot.png","featureList":["Alarmes com foto da embalagem do remédio","Interface lúdica com botões grandes","100% offline — sem internet necessária","Criptografia AES-256 local","Conformidade com a LGPD","Sem anúncios e sem rastreadores","Acessível para idosos, TDAH e TEA"],"inLanguage":"pt-BR","author":{"@id":"https://www.nurseguard.com.br/#organization"},"publisher":{"@id":"https://www.nurseguard.com.br/#organization"},"datePublished":"2024-01-01","dateModified":"2026-06-01"}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"NurseGuard","item":"https://www.nurseguard.com.br/"},{"@type":"ListItem","position":2,"name":"Recursos","item":"https://www.nurseguard.com.br/#features"},{"@type":"ListItem","position":3,"name":"Segurança","item":"https://www.nurseguard.com.br/#security"},{"@type":"ListItem","position":4,"name":"Privacidade","item":"https://nurseguard.com.br/privacidade/"},{"@type":"ListItem","position":5,"name":"Termos de Uso","item":"https://nurseguard.com.br/termosdeuso/"}]}</script>
 
+    <!-- Estilos e Bibliotecas -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
+    <!-- Barra de progresso de leitura (Scroll) -->
     <div class="top-progress-bar" id="progressBar"></div>
 
+    <!-- Menu de Navegação Superior -->
     <nav class="cler-nav" id="mainNavbar">
         <div class="nav-wrapper">
             <a href="#" class="logo" aria-label="NurseGuard Home">
@@ -89,6 +99,7 @@
 
     <main>
 
+        <!-- Hero Section: Chamada Principal -->
         <section class="section-hero">
             <div class="canvas-container hero-grid">
                 <div class="hero-block-left">
@@ -112,6 +123,7 @@
             </div>
         </section>
 
+        <!-- Pilar 1: Foto do Remédio -->
         <section class="section-spec-premium" id="pilar-1">
             <div class="canvas-container spec-premium-grid">
                 <div class="spec-sticky-block">
@@ -124,6 +136,7 @@
             </div>
         </section>
 
+        <!-- Pilar 2: Interface Acessível -->
         <section class="section-spec-premium light-bg" id="pilar-2">
             <div class="canvas-container spec-premium-grid">
                 <div class="spec-sticky-block">
@@ -136,6 +149,7 @@
             </div>
         </section>
 
+        <!-- Pilar 3: Sistema de Alarme -->
         <section class="section-spec-premium" id="pilar-3">
             <div class="canvas-container spec-premium-grid">
                 <div class="spec-sticky-block">
@@ -148,6 +162,7 @@
             </div>
         </section>
 
+        <!-- Pilar 4: Privacidade e Offline -->
         <section class="section-spec-premium light-bg" id="pilar-4">
             <div class="canvas-container spec-premium-grid">
                 <div class="spec-sticky-block">
@@ -160,6 +175,7 @@
             </div>
         </section>
 
+        <!-- Seção de Mockups das Telas -->
         <section class="section-app-screens" id="telas">
             <div class="app-screens-label">
                 <span class="section-badge">TELAS DO APLICATIVO</span>
@@ -168,28 +184,29 @@
                 <div class="mockups-grid">
                     <div class="phone-mockup">
                         <div class="phone-screen">
-                            <span class="placeholder-img">Tela 1</span>
+                            <img src="assets/tela1.png" alt="Interface do NurseGuard - Tela 1" class="mockup-img">
                         </div>
                     </div>
                     <div class="phone-mockup">
                         <div class="phone-screen">
-                            <span class="placeholder-img">Tela 2</span>
+                            <img src="assets/tela2.png" alt="Interface do NurseGuard - Tela 2" class="mockup-img">
                         </div>
                     </div>
                     <div class="phone-mockup">
                         <div class="phone-screen">
-                            <span class="placeholder-img">Tela 3</span>
+                            <img src="assets/tela3.png" alt="Interface do NurseGuard - Tela 3" class="mockup-img">
                         </div>
                     </div>
                     <div class="phone-mockup">
                         <div class="phone-screen">
-                            <span class="placeholder-img">Tela 4</span>
+                            <img src="assets/tela4.png" alt="Interface do NurseGuard - Tela 4" class="mockup-img">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Passo a Passo (Como Funciona) -->
         <section class="section-how-works" id="como-funciona">
             <div class="canvas-container">
                 <div class="centered-header">
@@ -223,6 +240,7 @@
             </div>
         </section>
 
+        <!-- Fachada de Vídeo (Performance: carrega apenas ao clicar) -->
         <section class="section-full-video">
             <div class="video-container" id="videoFacade" onclick="loadVideo()">
                 <div class="video-placeholder">
@@ -234,6 +252,7 @@
             </div>
         </section>
 
+        <!-- Público-Alvo: Idosos, TDAH e TEA -->
         <section class="section-target-audience" id="para-quem-e">
             <div class="canvas-container">
                 <div class="centered-header">
@@ -260,6 +279,7 @@
             </div>
         </section>
 
+        <!-- Depoimentos e Histórias Reais -->
         <section class="section-user-stories" id="depoimentos">
             <div class="canvas-container">
                 <div class="stories-wrapper">
@@ -287,6 +307,7 @@
             </div>
         </section>
 
+        <!-- FAQ: Perguntas Frequentes -->
         <section class="section-faq-list" id="faq">
             <div class="canvas-container">
                 <div class="faq-left-header">
@@ -319,6 +340,7 @@
             </div>
         </section>
 
+        <!-- Call To Action Final (Download) -->
         <section class="section-cta" id="download">
             <div class="canvas-container">
                 <div class="cta-box">
@@ -339,6 +361,7 @@
 
     </main>
 
+    <!-- Rodapé Institutional -->
     <footer class="cler-footer">
         <div class="canvas-container footer-grid">
             <div class="footer-brand">
@@ -380,6 +403,7 @@
         </div>
     </footer>
 
+    <!-- Script Principal -->
     <script src="script.js"></script>
 </body>
 </html>
